@@ -1,0 +1,30 @@
+{
+  "name": "tools-ts-vmhv",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tgz": "npm pack & if exist package move *.tgz package & echo success!"
+  },
+  "author": "Victor Manuel Hernandez Vargas",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hzvvictor/tools-ts-vmhv.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hzvvictor/tools-ts-vmhv/issues"
+  },
+  "homepage": "https://github.com/hzvvictor/tools-ts-vmhv#readme",
+  "description": "Una biblioteca de utilidades para Node.js que proporciona funciones para trabajar con arreglos, objetos, cadenas y archivos. También incluye herramientas para trabajar con expresiones regulares y argumentos de línea de comandos.",
+  "keywords": [
+    "node",
+    "utilidades",
+    "arreglos",
+    "objetos",
+    "cadenas",
+    "archivos",
+    "expresiones regulares",
+    "línea de comandos"
+  ]
+}
