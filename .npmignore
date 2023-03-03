@@ -1,1 +1,6 @@
 .commands
+node_modules
+deprecated
+src/components/exports
+src/test
+beta/
