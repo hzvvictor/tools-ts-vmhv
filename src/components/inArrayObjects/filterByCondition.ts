@@ -1,4 +1,5 @@
-import getValueOfNestedProperty from "./getValueOfNestedProperty";
+import getValueOfNestedProperty from "../inObject/inNestedProperty/get";
+
 
 const filterByCondition = <T>(
   arr: T[],

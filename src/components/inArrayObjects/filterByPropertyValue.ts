@@ -1,4 +1,4 @@
-import getValueOfNestedProperty from "./getValueOfNestedProperty";
+import getValueOfNestedProperty from "../inObject/inNestedProperty/get";
 
 const getByPropertyValue = <T>(
   arr: T[],

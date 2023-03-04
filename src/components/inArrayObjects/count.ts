@@ -1,9 +1,9 @@
-import getValueOfNestedProperty from "./getValueOfNestedProperty";
+import getValueOfNestedProperty from "../inObject/inNestedProperty/get";
 
 interface Objeto<T> {
   [key: string]: T | Objeto<T>;
 }
-const countByPropertyValue = <T>(
+const count = <T>(
   arr: T[],
   property: string,
   value: any
@@ -17,5 +17,5 @@ const countByPropertyValue = <T>(
   }
   return count;
 }
-export { countByPropertyValue as default }
+export { count as default }
 

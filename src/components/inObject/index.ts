@@ -1,5 +1,6 @@
 import getCountByValues from "./getCountByValues";
 import getMaxValue from "./getMaxValue";
+import inNestedProperty from "./inNestedProperty";
 import isEmpty from "./isEmpty";
 import mapKeys from "./mapKeys";
 import mergeDeep from "./mergeDeep";
@@ -11,8 +12,8 @@ const functions = {
   mapKeys,
   mergeDeep,
   sortByKey,
+  inNestedProperty,
 };
-
 export {
   functions as default,
   getCountByValues,
@@ -21,4 +22,5 @@ export {
   mapKeys,
   mergeDeep,
   sortByKey,
+  inNestedProperty,
 };
