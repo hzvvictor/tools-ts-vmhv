@@ -3,7 +3,7 @@
  * @param arr - El array de entrada.
  * @returns Un nuevo array sin repeticiones.
  */
-const removeDuplicates = (arr: any[]): any[] => (
+const removeDuplicates = <T>(arr: T[]): T[] => (
   Array.from(new Set(arr))
 )
 
