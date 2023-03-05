@@ -1,17 +1,17 @@
 
 
-const getMaxValue = (obj: Record<string, number>): { value: number; index: string } => {
+const getMaxValue = (obj: Record<string, number>): { key: string; value: number; } => {
   let value = -Infinity;
-  let index = '';
+  let key = '';
 
-  for (const key in obj) {
-    if (obj[key] > value) {
-      value = obj[key];
-      index = key;
+  for (const _key in obj) {
+    if (obj[_key] > value) {
+      value = obj[_key];
+      key = _key;
     }
   }
 
-  return { value, index };
+  return { key, value };
 };
 
 
