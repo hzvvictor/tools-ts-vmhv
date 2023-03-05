@@ -1,5 +1,5 @@
 {
-  "name": "tools-ts-vmhv",
+  "name": "tsmutils",
   "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
@@ -12,12 +12,12 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hzvvictor/tools-ts-vmhv.git"
+    "url": "git+https://github.com/hzvvictor/tsmutils.git"
   },
   "bugs": {
-    "url": "https://github.com/hzvvictor/tools-ts-vmhv/issues"
+    "url": "https://github.com/hzvvictor/tsmutils/issues"
   },
-  "homepage": "https://github.com/hzvvictor/tools-ts-vmhv#readme",
+  "homepage": "https://github.com/hzvvictor/tsmutils#readme",
   "description": "Una biblioteca de utilidades para Node.js que proporciona funciones para trabajar con arreglos, objetos, cadenas y archivos. También incluye herramientas para trabajar con expresiones regulares y argumentos de línea de comandos.",
   "keywords": [
     "node",
