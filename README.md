@@ -19,6 +19,7 @@ Aquí se proporciona una breve descripción del proyecto.
   const result1 = isEmpty([1, 2, 3]); // false
   const result2 = isEmpty([]); // true
   ```
+  Otras documentaciones se estan trabajando :)...
 
 ## Licencia
  Este proyecto está bajo la licencia [MIT](LICENSE). Consulta el archivo [LICENSE](LICENSE) para obtener más información.
