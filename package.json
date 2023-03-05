@@ -9,7 +9,7 @@
     "tgz": "npm pack & if exist package move *.tgz package & echo success!"
   },
   "author": "Victor Manuel Hernandez Vargas",
-  "license": "ISC",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hzvvictor/tsmuf.git"

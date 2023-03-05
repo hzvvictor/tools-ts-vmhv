@@ -14,7 +14,7 @@ Aquí se proporciona una breve descripción del proyecto.
   Esta función verifica si un array está vacío.
 
   ```javascript
-  import { isEmpty } from 'tools-ts-vmhv/inArray';
+  import { isEmpty } from 'tsmuf/inArray';
   const result1 = isEmpty([1, 2, 3]); // false
   const result2 = isEmpty([]); // true
   ```
