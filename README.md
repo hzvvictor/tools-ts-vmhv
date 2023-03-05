@@ -21,7 +21,7 @@ Aquí se proporciona una breve descripción del proyecto.
 ### `inArrayObjects.count`
     Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
-    ```javascript
+```javascript
 // Importar la función count desde el módulo
 import { inArrayObjects } from 'tsmuf';
 
@@ -32,11 +32,11 @@ const data = [
   { name: 'Charlie', age: 40, address: { city: 'Chicago', state: 'IL' } },
   { name: 'Dave', age: 35, address: { city: 'New York', state: 'NY' } }
 ];
-
 // Contar el número de objetos con city = 'New York'
 const result = inArrayObjects.count(data, 'address.city', 'New York');
 console.log(result); // 2
-    ```
+```
+
   Otras documentaciones se estan trabajando :)...
 
 ## Licencia
