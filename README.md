@@ -1,11 +1,11 @@
-# tools-ts-vmhv
+# tsmutils
 
 Aquí se proporciona una breve descripción del proyecto. 
 
 ## Instalación
 
-1. Clona el repositorio: `git clone https://github.com/usuario/nombre-del-repositorio.git`
-2. Accede al directorio del proyecto: `cd nombre-del-repositorio`
+1. Clona el repositorio: `git clone https://https://github.com/hzvvictor/tsmutils`
+2. Accede al directorio del proyecto: `cd tsmutils`
 3. Instala las dependencias: `npm install`
 
 ## Uso

@@ -28,3 +28,4 @@ const toCamelAndSnakeCase = (string: string): {
 
 console.log(toCamelAndSnakeCase('exampleText'));
 // { camel: 'exampleText', snake: 'example_text', type: 'camel' }
+export default toCamelAndSnakeCase;
