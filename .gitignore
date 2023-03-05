@@ -1,8 +1,8 @@
 .commands
-node_modules
-deprecated
 src/components/exports
+node_modules/
+deprecated/
 src/test
 beta/
+dist/
 src/**/*.js
-dist

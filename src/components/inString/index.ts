@@ -1,4 +1,9 @@
 import toCase from "./toCase";
 
-export { toCase }
-export default { toCase }
+const functions = {
+  toCase
+}
+export {
+  functions as default,
+  toCase
+}

@@ -1,14 +1,15 @@
 import read from "./read";
 import { del, getStats, move, rename } from "../inFile";
 
-export {
+const functions = {
   read,
   rename,
   move,
   del,
   getStats,
 }
-export default {
+export {
+  functions as default,
   read,
   rename,
   move,

@@ -11,7 +11,7 @@ import setPropByFilter from './setPropByFilter'
 import sortByProperty from './sortByProperty'
 import updateInAll from './updateInAll'
 
-export {
+const functions = {
   changeValueByPropVal,
   combine,
   count,
@@ -25,7 +25,8 @@ export {
   sortByProperty,
   updateInAll,
 }
-export default {
+export {
+  functions as default,
   changeValueByPropVal,
   combine,
   count,

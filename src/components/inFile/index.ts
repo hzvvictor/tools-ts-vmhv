@@ -1,14 +1,15 @@
 import { del, getStats, move, rename } from "../inDirAndFile/actions";
 import write from "./write";
 
-export {
+const functions = {
   write,
   del,
   move,
   rename,
   getStats,
 }
-export default {
+export {
+  functions as default,
   write,
   del,
   move,

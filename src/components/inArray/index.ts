@@ -4,8 +4,7 @@ import getLengthArrDictionary from "./getLengthArrDictionary"
 import getMaxValue from "./getMaxValue"
 import isEmpty from "./isEmpty"
 import removeDuplicates from "./removeDuplicates"
-
-export {
+const functions = {
   keysToObject, 
   
   getMaxValue,
@@ -14,16 +13,16 @@ export {
   removeDuplicates,
   isEmpty,
 }
-export default {
-  keysToObject,
-
+export {
+  functions as default,
+  keysToObject, 
+  
   getMaxValue,
   getArrayOfMostRepeatedLength,
   getLengthArrDictionary,
   removeDuplicates,
   isEmpty,
 }
-
 
 /**
  * Remove all occurrences of the specified item from the array.

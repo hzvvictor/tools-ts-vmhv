@@ -3,14 +3,15 @@ import isCapitalized from "./isCapitalized";
 import isSnakeCase from "./isSnakeCase";
 import isWord from "./isWord";
 
-export {
+const functions = {
   isSnakeCase,
   isCamelCase,
   isCapitalized,
   isWord,
 }
 
-export default {
+export {
+  functions as default,
   isSnakeCase,
   isCamelCase,
   isCapitalized,
