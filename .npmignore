@@ -4,3 +4,4 @@ deprecated
 src/components/exports
 src/test
 beta/
+src/**/*.js

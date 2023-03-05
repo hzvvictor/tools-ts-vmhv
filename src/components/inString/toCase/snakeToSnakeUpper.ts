@@ -1,4 +1,4 @@
-const snakeToSnakeUpper = (string) => (
+const snakeToSnakeUpper = (string: string) => (
   string
     .replace(/_[a-z]/g, letter => (
       letter.toUpperCase()
