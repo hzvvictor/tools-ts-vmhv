@@ -6,3 +6,4 @@ src/test
 beta/
 dist/
 src/**/*.js
+src/**/*.beta.ts

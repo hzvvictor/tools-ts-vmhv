@@ -6,8 +6,10 @@
   },
   "exclude": [
     "node_modules",
+    "dist",
     "beta",
     "deprecated",
     "src/test",
+    "*.beta.ts",
   ]
 }
