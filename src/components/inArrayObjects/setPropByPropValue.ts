@@ -36,13 +36,16 @@ function setPropByConstVals<T>(
   return arr.map((item) => {
     let newItem = { ...item };
     for (const update of updates) {
-      if (checkFilter(item, update.when)) {
-        const propertyValue = getValueOfNestedProperty(newItem, update.property as string);
-        const newValue = update.value || update.default;
-        if (propertyValue !== undefined && propertyValue !== null) {
-          newItem = updateNestedProperty(newItem, update.property as string, newValue);
-        } else {
-          newItem = updateNestedProperty(newItem, (update.property as keyof T) as string, newValue);
+      for (const filterKey in update.when) {
+        const filter = update.when[filterKey]
+        if (checkFilter(item, { [filterKey]: filter } as Filter<T>)) {
+          const propertyValue = getValueOfNestedProperty(newItem, update.property as string);
+          const newValue = update.value || update.default;
+          if (propertyValue !== undefined && propertyValue !== null) {
+            newItem = updateNestedProperty(newItem, update.property as string, newValue);
+          } else {
+            newItem = updateNestedProperty(newItem, (update.property as keyof T) as string, newValue);
+          }
         }
       }
     }
@@ -106,7 +109,7 @@ const updates = [
   {
     property: 'details.price',
     value: 15,
-    when: { 'details.size': 'M' },
+    when: { 'details.color': 'red', 'details.price': 12 },
   },
   {
     property: 'details.color',

@@ -1,11 +1,21 @@
 # tsmuf
 
-Aquí se proporciona una breve descripción del proyecto. 
+Aquí se proporciona una breve descripción del proyecto (BETA). 
 
 ## Instalación
 1. Instala las dependencias: `npm install tsmuf`
 2. Importa las librerias => import { inArray , inString, ... } from 'tsmuf';
 3. Usa las funciones de la libreria;
+
+## Indice
+-[`inArray.isSubset`](#inArrayisSubset)
+-[`inArray.getMaxValue`](#inArraygetMaxValue)
+-[`inArray.removeDuplicates`](#inArrayremoveDuplicates)
+-[`inArray.isEmpty`](#inArrayisEmpty)
+-[`inArray.last`](#inArraylast)
+-[`inArrayObjects.setPropByFilter`](#inArrayObjectssetPropByFilter)
+-[`inArrayObjects.count`](#inArrayObjectscount)
+-[`inArrayObjects.groupByNestedProperty`](#inArrayObjectsgroupByNestedProperty)
 
 ## Uso
   La librería incluye las siguientes funciones y utilidades:
