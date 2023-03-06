@@ -3,9 +3,9 @@
 Aquí se proporciona una breve descripción del proyecto. 
 
 ## Instalación
-1. Clona el repositorio: `git clone https://https://github.com/hzvvictor/tsmuf`
-2. Accede al directorio del proyecto: `cd tsmuf`
-3. Instala las dependencias: `npm install`
+1. Instala las dependencias: `npm install tsmuf`
+2. Importa las librerias => import { inArray , inString, ... } from 'tsmuf';
+3. Usa las funciones de la libreria;
 
 ## Uso
   La librería incluye las siguientes funciones y utilidades:
@@ -63,11 +63,11 @@ const result2 = inArray.last([900, 300]); // 300
 ```
 ### `inArray.setPropByFilter`
   Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
-  | Producto | Categoria | Precio | Actualizar
+  | Producto | Categoria | Precio | Nuevo precio
   | ------ | ------ | ------ | ------ |
-  | Producto A | Category A | 10 | *
-  | Producto B | Category B | 20 | 
-  | Producto C | Category A | 30 | *
+  | Producto A | Category A | 10 | 10
+  | Producto B | Category B | 20 | 50
+  | Producto C | Category A | 30 | 10
 
 ```javascript
 import { inArrayObjects } from 'tsmuf';
@@ -79,7 +79,8 @@ const products = [
 ];
 
 const updates = [
-  { property: 'price', value: 15, when: (obj) => obj.category === 'Category A' }
+  { property: 'price', value: 15, when: (obj) => obj.category === 'Category A' },
+  { property: 'price', value: 50, when: (obj) => obj.price === 20 }
 ];
 
 const updatedProducts = setPropByFilter(products, updates);
@@ -90,7 +91,7 @@ console.log(updatedProducts);
 ```javascript
 [
   { id: 1, name: 'Producto A', category: 'Category A', price: 15 },
-  { id: 2, name: 'Producto B', category: 'Category B', price: 20 },
+  { id: 2, name: 'Producto B', category: 'Category B', price: 50 },
   { id: 3, name: 'Producto C', category: 'Category A', price: 15 }
 ]
 ```
