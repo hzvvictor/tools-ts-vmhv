@@ -28,3 +28,16 @@ const count = <T>(
 }
 export { count as default }
 
+{// Importar la función count desde el módulo
+
+  // Ejemplo de uso de la función count
+  const data = [
+    { name: 'Alice', age: 30, address: { city: 'New York', state: 'NY' } },
+    { name: 'Bob', age: 25, address: { city: 'Los Angeles', state: 'CA' } },
+    { name: 'Charlie', age: 40, address: { city: 'Chicago', state: 'IL' } },
+    { name: 'Dave', age: 35, address: { city: 'New York', state: 'NY' } }
+  ];
+  // Contar el número de objetos con city = 'New York'
+  const result = count(data, 'address.city', 'New York');
+  console.log(result); // 2
+}

@@ -37,6 +37,37 @@ const result = inArrayObjects.count(data, 'address.city', 'New York');
 console.log(result); // 2
 ```
 
+### `inArrayObjects.groupByNestedProperty`
+  Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
+```javascript
+const personas = [
+  { nombre: "Victor", datos: { persona: { edad: 30, altura: 170 } } },
+  { nombre: "Martha", datos: { persona: { edad: 25, altura: 165 } } },
+  { nombre: "Pedro", datos: { persona: { edad: 30, altura: 180 } } },
+  { nombre: "Lucía", datos: { persona: { edad: 25, altura: 175 } } }
+]
+;
+
+```
+  Para agruparlos por edad, podrías llamar a la función groupByNestedProperty así:
+```javascript
+const personasPorEdad = groupByNestedProperty(personas, "datos.persona.edad");
+console.log(personasPorEdad);
+```
+  Esto produciría la siguiente salida:
+```json
+{
+  "30": [
+    { "nombre": "Victor", "datos": { ... } },
+    { "nombre": "Pedro", "datos": { ... } }
+  ],
+  "25": [ 
+    { "nombre": "Martha", "datos": { ... } },
+    { "nombre": "Lucía", "datos": { ... } }
+  ]
+}
+```
+
   Otras documentaciones se estan trabajando :)...
 
 ## Licencia

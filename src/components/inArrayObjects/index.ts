@@ -6,10 +6,9 @@ import filterByPropertyValue from './filterByPropertyValue'
 import filterExcludeByPropertyValue from './filterExcludeByPropertyValue'
 import getMaxPropertyValue from './getMaxPropertyValue'
 import groupByNestedProperty from './groupByNestedProperty'
-import setPropByConstVals from './setPropByConstVals'
+import setPropByConstVals from './setPropByPropValue'
 import setPropByFilter from './setPropByFilter'
 import sortByProperty from './sortByProperty'
-import updateInAll from './updateInAll'
 
 const functions = {
   changeValueByPropVal,
@@ -23,7 +22,6 @@ const functions = {
   setPropByConstVals,
   setPropByFilter,
   sortByProperty,
-  updateInAll,
 }
 export {
   functions as default,
@@ -38,5 +36,4 @@ export {
   setPropByConstVals,
   setPropByFilter,
   sortByProperty,
-  updateInAll,
 }
