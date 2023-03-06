@@ -61,7 +61,7 @@ import { inArray } from 'tsmuf';
 const result1 = inArray.last([1, 2, 3]); // 3
 const result2 = inArray.last([900, 300]); // 300
 ```
-### `inArray.setPropByFilter`
+### `inArrayObjects.setPropByFilter`
   Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
   | Producto | Categoria | Precio | Nuevo precio
   | ------ | ------ | ------ | ------ |
