@@ -55,15 +55,15 @@ const personasPorEdad = groupByNestedProperty(personas, "datos.persona.edad");
 console.log(personasPorEdad);
 ```
   Esto produciría la siguiente salida:
-```json
+```javascript
 {
   "30": [
-    { "nombre": "Victor", "datos": { ... } },
-    { "nombre": "Pedro", "datos": { ... } }
+    { "nombre": "Juan", "datos": { "persona": { "edad": 30, "altura": 170 } } },
+    { "nombre": "Pedro", "datos": { "persona": { "edad": 30, "altura": 180 } } }
   ],
-  "25": [ 
-    { "nombre": "Martha", "datos": { ... } },
-    { "nombre": "Lucía", "datos": { ... } }
+  "25": [
+    { "nombre": "María", "datos": { "persona": { "edad": 25, "altura": 165 } } },
+    { "nombre": "Lucía", "datos": { "persona": { "edad": 25, "altura": 175 } } }
   ]
 }
 ```
