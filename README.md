@@ -22,11 +22,11 @@ Aquí se proporciona una breve descripción del proyecto (BETA).
 
 ### inArray
 ### Indice
-- [inArray.isSubset](#inArrayisSubset)
-- [inArray.getMaxValue](#inArraygetMaxValue)
-- [inArray.removeDuplicates](#inArrayremoveDuplicates)
-- [inArray.isEmpty](#inArrayisEmpty)
-- [inArray.last](#inArraylast)
+- [isSubset](#inArrayisSubset)
+- [getMaxValue](#inArraygetMaxValue)
+- [removeDuplicates](#inArrayremoveDuplicates)
+- [isEmpty](#inArrayisEmpty)
+- [last](#inArraylast)
 
 #### _inArray.isSubset_
   Comprueba si un arreglo es un subconjunto de otro arreglo más grande.
@@ -86,13 +86,13 @@ const result2 = inArray.last([900, 300]); // 300
 ### inArrayObjects
 ___
 ### Indice
-- [inArrayObjects.count](#inArrayObjectsCount)
-- [inArrayObjects.setPropByFilter](#inArrayObjectsSetPropByFilter)
-- [inArrayObjects.groupByNestedProperty](#inArrayObjectsGroupByNestedProperty)
-- [inArrayObjects.mergeArraysByProperty](#inArrayObjectsMergeArraysByProperty)
-- [inArrayObjects.setPropByPropValue](#inArrayObjectsSetPropByPropValue)
-- [inArrayObjects.sortByProperty](#inArrayObjectsSortByProperty)
-- [inArrayObjects.getMaxPropertyValue](#inArrayObjectsGetMaxPropertyValue)
+- [count](#inArrayObjectsCount)
+- [setPropByFilter](#inArrayObjectsSetPropByFilter)
+- [groupByNestedProperty](#inArrayObjectsGroupByNestedProperty)
+- [mergeArraysByProperty](#inArrayObjectsMergeArraysByProperty)
+- [setPropByPropValue](#inArrayObjectsSetPropByPropValue)
+- [sortByProperty](#inArrayObjectsSortByProperty)
+- [getMaxPropertyValue](#inArrayObjectsGetMaxPropertyValue)
 #### _inArrayObjects.count_
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
