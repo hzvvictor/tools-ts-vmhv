@@ -21,6 +21,13 @@ Aquí se proporciona una breve descripción del proyecto (BETA).
 
 
 ### inArray
+### Indice
+- [inArray.isSubset](#inArrayisSubset)
+- [inArray.getMaxValue](#inArraygetMaxValue)
+- [inArray.removeDuplicates](#inArrayremoveDuplicates)
+- [inArray.isEmpty](#inArrayisEmpty)
+- [inArray.last](#inArraylast)
+
 #### _inArray.isSubset_
   Comprueba si un arreglo es un subconjunto de otro arreglo más grande.
 
@@ -315,7 +322,7 @@ La función `read` permite leer el contenido de un directorio y obtener los arch
 
 Para utilizar esta función, se debe importar desde el archivo donde se desea utilizar de la siguiente forma:
 ```javascript
-import { read } from 'tsmuf/inFile';
+import { read } from 'tsmuf/inDir';
 ```
 Luego, se puede llamar a la función read de la siguiente forma:
 ```javascript
