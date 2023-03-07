@@ -22,7 +22,7 @@ Aquí se proporciona una breve descripción del proyecto (BETA).
 
 ### inArray
 #### `inArray.isSubset`
->Comprueba si un arreglo es un subconjunto de otro arreglo más grande.
+  Comprueba si un arreglo es un subconjunto de otro arreglo más grande.
 
 ```javascript
 import { inArray } from 'tsmuf';
@@ -34,7 +34,7 @@ const bigArr = [2, 4, 6];
 console.log(isSubset(smallArr, bigArr)); // true
 ```
 #### `inArray.getMaxValue`
->Encuentra el valor máximo y su índice en un arreglo de números.
+  Encuentra el valor máximo y su índice en un arreglo de números.
 
 ```javascript
 import { inArray } from 'tsmuf';
@@ -45,7 +45,7 @@ const resultado = getMaxValue(numeros);
 console.log(`El valor máximo es ${resultado.value} y se encuentra en la posición ${resultado.index}`)//`El valor máximo es 8 y se encuentra en la posición 4
 ```
 #### `inArray.removeDuplicates`
->Elimina elementos duplicados de un array y devuelve un nuevo array sin repeticiones.
+  Elimina elementos duplicados de un array y devuelve un nuevo array sin repeticiones.
 
 ```javascript
 import { inArray } from 'tsmuf';
@@ -54,7 +54,7 @@ console.log(removeDuplicates([1, 2, 1, 2]))// [1, 2]
 console.log(removeDuplicates([100,200,100]))// [100, 200]
 ```
 #### `inArray.isEmpty`
->Esta función verifica si un array está vacío.
+  Esta función verifica si un array está vacío.
 
 ```javascript
 import { inArray } from 'tsmuf';
@@ -64,7 +64,7 @@ const result1 = isEmpty([1, 2, 3]); // false
 const result2 = isEmpty([]); // true
 ```
 #### `inArray.last`
->Esta función obtiene el último elemento de un arreglo.
+  Esta función obtiene el último elemento de un arreglo.
 
 ```javascript
 import { inArray } from 'tsmuf';
@@ -74,7 +74,7 @@ const result2 = inArray.last([900, 300]); // 300
 ```
 ### inArrayObjects
 #### `inArrayObjects.count`
->Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
+  Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
 ```javascript
 // Importar la función count desde el módulo
@@ -92,7 +92,7 @@ const result = inArrayObjects.count(data, 'address.city', 'New York');
 console.log(result); // 2
 ```
 #### `inArrayObjects.setPropByFilter`
->Actualiza las propiedades de un array de objetos en base a una propiedad anidada y valor constante.
+  Actualiza las propiedades de un array de objetos en base a una propiedad anidada y valor constante.
   Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
   | Producto | Categoria | Precio | Nuevo precio
   | ------ | ------ | ------ | ------ |
@@ -127,7 +127,7 @@ console.log(updatedProducts);
 ]
 ```
 #### `inArrayObjects.groupByNestedProperty`
->Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
+  Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
 ```javascript
 import { mergeArraysByProperty } from 'tsmuf/inArrayObjects';
 const personas = [
@@ -160,8 +160,8 @@ console.log(personasPorEdad);
 
   Otras documentaciones se estan trabajando :)...
 #### `inArrayObjects.mergeArraysByProperty`
->Agrupa por una propiedad y fusiona los arrays.
->Devolviendo un objeto con las propiedades agrupadas como claves y los valores de los arrays combinados como valores.
+  Agrupa por una propiedad y fusiona los arrays.
+  Devolviendo un objeto con las propiedades agrupadas como claves y los valores de los arrays combinados como valores.
   Por ejemplo queremos agruparlos por 'country' los array de 'customers' con 'orders'.
 ```javascript
   import { mergeArraysByProperty } from 'tsmuf/inArrayObjects';
@@ -199,7 +199,7 @@ Esto produciría la siguiente salida:
 }
 ```
 #### `inArrayObjects.setPropByPropValue`
->Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
+  Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
 
 Supongamos que tenemos un arreglo de objetos que representan productos:
 | id  | color | tamaño | Precio |
@@ -245,7 +245,7 @@ Esto produciría la siguiente salida:
 ]
 ```
 #### `inArrayObjects.sortByProperty`
->Ordena un array de objetos por una propiedad anidada específica, de manera ascendente o descendente.
+  Ordena un array de objetos por una propiedad anidada específica, de manera ascendente o descendente.
 Supongamos que tenemos un array de objetos que representan canciones, y queremos ordenarlas por el año de lanzamiento de manera descendente:
 ```javascript
 import { sortByProperty } from 'tsmuf/inArrayObjects';
