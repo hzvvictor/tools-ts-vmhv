@@ -199,7 +199,8 @@ Esto produciría la siguiente salida:
 }
 ```
 #### `inArrayObjects.setPropByPropValue`
->Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valores constantes.
+>Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
+
   Supongamos que tenemos un arreglo de objetos que representan productos:
   | id  | color | tamaño | Precio 
   | ------ | ------ | ------ | ------  
