@@ -85,6 +85,14 @@ const result2 = inArray.last([900, 300]); // 300
 ```
 ### inArrayObjects
 ___
+### Indice
+- [inArrayObjects.count](#inArrayObjectsCount)
+- [inArrayObjects.setPropByFilter](#inArrayObjectsSetPropByFilter)
+- [inArrayObjects.groupByNestedProperty](#inArrayObjectsGroupByNestedProperty)
+- [inArrayObjects.mergeArraysByProperty](#inArrayObjectsMergeArraysByProperty)
+- [inArrayObjects.setPropByPropValue](#inArrayObjectsSetPropByPropValue)
+- [inArrayObjects.sortByProperty](#inArrayObjectsSortByProperty)
+- [inArrayObjects.getMaxPropertyValue](#inArrayObjectsGetMaxPropertyValue)
 #### _inArrayObjects.count_
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
