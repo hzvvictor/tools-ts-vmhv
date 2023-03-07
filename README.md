@@ -310,51 +310,44 @@ Esto produciría la siguiente salida:
 ### inDir
 ___
 #### _inDir.read_
-  
+   Lee el contenido de un directorio.
+   - De forma recursiva (opcional)
+   - Parametros un objeto: { dirPath, recursive = false }
+   - Devuelve: {  files: string[];  error?: Error;}
 ```javascript
 import { read } from 'tsmuf/inDir';
 
-const input = '';
-const output = read(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+const path = '.';
+const { error, files } = read({ dirPath: path });
+if (files.length > 0) {
+  console.log({ files });
+}
 ```
 ___
 #### _inDir.rename_
-  
+  Renombra a un arhivo o directorio.
+   - Parametros: (pathCurrent: string, newName: string)
+   - Devuelve: { mensaje: string; error?: Error }
 ```javascript
 import { rename } from 'tsmuf/inDir';
 
-const input = '';
-const output = rename(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+const pathCurrent = './example/dir';
+const newName = 'dirNewName';
+const { error, mensaje } = rename(pathCurrent, newName);
+if (!error) console.log(mensaje); 
 ```
 ___
 #### _inDir.move_
-  
+    Renombra a un arhivo o directorio.
+   - Parametros: (pathCurrent: string, newPath: string)
+   - Devuelve: { mensaje: string; error?: Error }
 ```javascript
 import { move } from 'tsmuf/inDir';
 
-const input = '';
-const output = move(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+const path = './example/dir';
+const newPath = '.';
+const { error, mensaje } = rename(path, newPath);
+if (!error) console.log(mensaje); 
 ```
 ___
 #### _inDir.del_
@@ -362,112 +355,99 @@ ___
 ```javascript
 import { del } from 'tsmuf/inDir';
 
-const input = '';
-const output = del(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+const path = '';
+const { error, mensaje } = del(path);
+if (error) 
+  console.log(error); 
+else if 
+  console.log(mensaje); 
 ```
 ___
 #### _inDir.getStats_
-  
+    Devuelve la información de los stats de un archivo o directorio.
+   - Parametros: (path: string)
+   - Devuelve: 
+```typescript
+{
+  isFile: boolean;
+  isDirectory: boolean;
+  size: number;
+  createdTime: Date;
+  modifiedTime: Date;
+}
+```
 ```javascript
 import { getStats } from 'tsmuf/inDir';
 
-const input = '';
-const output = getStats(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+const path = 'C:';
+const stats = getStats(path);
+console.log(stats); 
 ```
 ### inFile
 ___
 #### _inFile.write_
-  
+   Crea, añade o sobreescribe contenido de un archivo
+    - Parametros: (path: string, content: string, option: 'create' | 'append' | 'overwrite')
+    - 
 ```javascript
 import { write } from 'tsmuf/inFile';
 
-const input = '';
-const output = write(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+const path = './text.txt';
+const { error, mensaje } = write(path, 'content', 'create');
+if (!error) 
+  console.log(mensaje); 
 ```
 ___
-#### _inFile.del_
-  
-```javascript
-import { del } from 'tsmuf/inFile';
-
-const input = '';
-const output = del(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
-```
-___
-#### _inFile.move_
-  
-```javascript
-import { move } from 'tsmuf/inFile';
-
-const input = '';
-const output = move(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
-```
-___
-#### _inFile.rename_
-  
+#### _inFile.rename_ 
 ```javascript
 import { rename } from 'tsmuf/inFile';
 
-const input = '';
-const output = rename(input);
-console.log(output); 
+const patFile = './example/file.txt';
+const newName = 'fileRenamed.txt';
+const { error, mensaje } = rename(patFile, newName);
+if (!error) console.log(mensaje); 
 ```
-  
+#### _inFile.move_
 ```javascript
+import { move } from 'tsmuf/inFile';
+
+const pathFile = './example/file.txt';
+const newPath = '.';
+const { error, mensaje } = rename(pathFile, newPath);
+if (!error) console.log(mensaje); 
 ```
-Salida:
+___
+#### _inFile.del_
 ```javascript
+import { del } from 'tsmuf/inFile';
+
+const path = '';
+const { error, mensaje } = del(path);
+if (error) 
+  console.log(error); 
+else if 
+  console.log(mensaje); 
 ```
 ___
 #### _inFile.getStats_
-  
+    Devuelve la información de los stats de un archivo o directorio.
+   - Parametros: (path: string)
+   - Devuelve: 
+```typescript
+{
+  isFile: boolean;
+  isDirectory: boolean;
+  size: number;
+  createdTime: Date;
+  modifiedTime: Date;
+}
+```
 ```javascript
 import { getStats } from 'tsmuf/inFile';
 
-const input = '';
-const output = getStats(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+const pathFile = 'C:';
+const stats = getStats(pathFile);
+console.log(stats); 
 ```
 ### inObject
 ___
