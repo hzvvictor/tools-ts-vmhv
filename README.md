@@ -93,7 +93,7 @@ ___
 - [setPropByPropValue](#inArrayObjectsSetPropByPropValue)
 - [sortByProperty](#inArrayObjectsSortByProperty)
 - [getMaxPropertyValue](#inArrayObjectsGetMaxPropertyValue)
-#### _inArrayObjects.count_  [Volver a Indice ↩️️](#indice-2)
+#### _inArrayObjects.count_  [Volver a Indice ↩️️](#indice-2){#inArrayObjectsCount}
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
 ```javascript
