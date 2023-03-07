@@ -307,7 +307,7 @@ Para
 Esto produciría la siguiente salida:
 ```javascript
 ```
-### inDir
+### inDir 
 ___
 #### _inDir.read_
 #### Uso de la función read
@@ -332,7 +332,8 @@ Donde `dirPath` es la ruta del directorio a leer y `recursive` es un valor boole
 En caso de existir algún error durante la lectura del directorio, se devuelve un objeto con la propiedad error que contiene el error generado.
 ___
 #### _inDir.rename_ ||  _inFile.rename_
-  La función rename permite renombrar un archivo o un directorio en una ruta determinada.
+#### Uso de la función rename
+  La función `rename` permite renombrar un archivo o un directorio en una ruta determinada.
 ##### Uso
 Para utilizar la función rename, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
 ```javascript
@@ -357,7 +358,8 @@ if (response.error) {
 ```
 ___
 #### _inDir.move_ || _inFile.move_
-  La función move permite renombrar un archivo o un directorio en una ruta determinada.
+#### Uso de la función move
+  La función `move` permite mover un archivo o un directorio en una ruta determinada.
 ##### Uso
 Para utilizar la función move, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
 ```javascript
@@ -382,38 +384,58 @@ if (resultado.error) {
 }
 ```
 ___
-#### _inDir.del_
-  
-```javascript
-import { del } from 'tsmuf/inDir';
+#### _inDir.del_ || _inFile.del_
+Elimina un archivo o directorio en la ruta especificada.
 
-const path = '';
-const { error, mensaje } = del(path);
-if (error) 
-  console.log(error); 
-else if 
-  console.log(mensaje); 
+##### Parámetros
+ - path (obligatorio): Una cadena de texto que representa la ruta del archivo o directorio a eliminar.
+##### Valor de retorno
+La función devuelve un objeto Response con los siguientes campos:
+ - mensaje: Un mensaje que indica si la operación se realizó con éxito.
+ - error (opcional): Si se produce un error, este campo contendrá una cadena de texto que describe el error.
+#### Uso de la función del
+```javascript
+import { del } from 'tsmuf/inDir'
+
+const path = '/ruta/a/mi/archivo.txt';
+
+const response = del(path);
+
+if (response.error) {
+  console.error(response.error);
+} else {
+  console.log(response.mensaje);
+}
+
 ```
 ___
-#### _inDir.getStats_
-    Devuelve la información de los stats de un archivo o directorio.
-   - Parametros: (path: string)
-   - Devuelve: 
-```typescript
-{
-  isFile: boolean;
-  isDirectory: boolean;
-  size: number;
-  createdTime: Date;
-  modifiedTime: Date;
+#### _inDir.getStats_ || _inFile.getStats_
+La función getStats permite obtener información sobre los stats de un archivo o directorio en una ruta específica.
+#### Uso de la función getStats
+La función toma un parámetro path que representa la ruta del archivo o directorio que se quiere analizar. Retorna un objeto que contiene la información de los stats, como si es un archivo o directorio, el tamaño, la fecha de creación y la fecha de modificación. Si la ruta no existe o se produce un error al intentar obtener los stats, la función retorna null.
+```javascript 
+import { getStats } from 'tsmuf';
+
+const statsInfo = getStats('/path/to/file');
+
+if (statsInfo !== null) {
+  console.log(statsInfo.isFile); // true
+  console.log(statsInfo.isDirectory); // false
+  console.log(statsInfo.size); // 1024
+  console.log(statsInfo.createdTime); // Date('2022-02-28T20:30:00.000Z')
+  console.log(statsInfo.modifiedTime); // Date('2022-03-01T10:45:00.000Z')
 }
 ```
-```javascript
-import { getStats } from 'tsmuf/inDir';
-
-const path = 'C:';
-const stats = getStats(path);
-console.log(stats); 
+#### Interfaz
+La función getStats utiliza la interfaz StatsInfo para representar la información de los stats de un archivo o directorio:
+```typescript
+interface StatsInfo {
+  isFile: boolean; // Indica si es un archivo o no
+  isDirectory: boolean; // Indica si es un directorio o no
+  size: number; // El tamaño en bytes del archivo o directorio
+  createdTime: Date; // La fecha de creación del archivo o directorio
+  modifiedTime: Date; // La fecha de modificación del archivo o directorio
+}
 ```
 ### inFile
 ___
@@ -429,57 +451,6 @@ if (!error)
   console.log(mensaje); 
 ```
 ___
-#### _inFile.rename_ 
-```javascript
-import { rename } from 'tsmuf/inFile';
-
-const patFile = './example/file.txt';
-const newName = 'fileRenamed.txt';
-const { error, mensaje } = rename(patFile, newName);
-if (!error) console.log(mensaje); 
-```
-#### _inFile.move_
-```javascript
-import { move } from 'tsmuf/inFile';
-
-const pathFile = './example/file.txt';
-const newPath = '.';
-const { error, mensaje } = rename(pathFile, newPath);
-if (!error) console.log(mensaje); 
-```
-___
-#### _inFile.del_
-```javascript
-import { del } from 'tsmuf/inFile';
-
-const path = '';
-const { error, mensaje } = del(path);
-if (error) 
-  console.log(error); 
-else if 
-  console.log(mensaje); 
-```
-___
-#### _inFile.getStats_
-    Devuelve la información de los stats de un archivo o directorio.
-   - Parametros: (path: string)
-   - Devuelve: 
-```typescript
-{
-  isFile: boolean;
-  isDirectory: boolean;
-  size: number;
-  createdTime: Date;
-  modifiedTime: Date;
-}
-```
-```javascript
-import { getStats } from 'tsmuf/inFile';
-
-const pathFile = 'C:';
-const stats = getStats(pathFile);
-console.log(stats); 
-```
 ### inObject
 ___
 #### _inObject.getCountByValues_
