@@ -93,7 +93,7 @@ ___
 - [setPropByPropValue](#inArrayObjectsSetPropByPropValue)
 - [sortByProperty](#inArrayObjectsSortByProperty)
 - [getMaxPropertyValue](#inArrayObjectsGetMaxPropertyValue)
-#### _inArrayObjects.count_
+#### _inArrayObjects.count_  [Volver a Indice ↩️️](#inArrayObjectsCount)
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
 ```javascript
@@ -112,7 +112,7 @@ const result = inArrayObjects.count(data, 'address.city', 'New York');
 console.log(result); // 2
 ```
 ___
-#### _inArrayObjects.setPropByFilter_
+#### _inArrayObjects.setPropByFilter_  [Volver a Indice ↩️️](#inArrayObjectsSetPropByFilter)
   Actualiza las propiedades de un array de objetos en base a una propiedad anidada y valor constante.
   Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
   | Producto | Categoria | Precio | Nuevo precio
@@ -148,7 +148,7 @@ console.log(updatedProducts);
 ]
 ```
 ___
-#### _inArrayObjects.groupByNestedProperty_
+#### _inArrayObjects.groupByNestedProperty_  [Volver a Indice ↩️️](#inArrayObjectsGroupByNestedProperty)
   Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
 ```javascript
 import { mergeArraysByProperty } from 'tsmuf/inArrayObjects';
@@ -182,7 +182,7 @@ console.log(personasPorEdad);
 
   Otras documentaciones se estan trabajando :)...
 ___
-#### _inArrayObjects.mergeArraysByProperty_
+#### _inArrayObjects.mergeArraysByProperty_  [Volver a Indice ↩️️](#inArrayObjectsMergeArraysByProperty)
   Agrupa por una propiedad y fusiona los arrays.
   Devolviendo un objeto con las propiedades agrupadas como claves y los valores de los arrays combinados como valores.
   Por ejemplo queremos agruparlos por 'country' los array de 'customers' con 'orders'.
@@ -222,7 +222,7 @@ Esto produciría la siguiente salida:
 }
 ```
 ___
-#### _inArrayObjects.setPropByPropValue_
+#### _inArrayObjects.setPropByPropValue_  [Volver a Indice ↩️️](#inArrayObjectsSetPropByPropValue)
   Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
 
 Supongamos que tenemos un arreglo de objetos que representan productos:
@@ -269,7 +269,7 @@ Esto produciría la siguiente salida:
 ]
 ```
 ___
-#### _inArrayObjects.sortByProperty_
+#### _inArrayObjects.sortByProperty_  [Volver a Indice ↩️️](#inArrayObjectsSortByProperty)
   Ordena un array de objetos por una propiedad anidada específica, de manera ascendente o descendente.
 Supongamos que tenemos un array de objetos que representan canciones, y queremos ordenarlas por el año de lanzamiento de manera descendente:
 ```javascript
@@ -310,7 +310,7 @@ Esto produciría la siguiente salida:
 ]
 ```
 ___
-#### _inArrayObjects.getMaxPropertyValue_
+#### _inArrayObjects.getMaxPropertyValue_  [Volver a Indice ↩️️](#inArrayObjectsGetMaxPropertyValue)
   
 ```javascript
 import { getMaxPropertyValue } from 'tsmuf/inArrayObjects';
