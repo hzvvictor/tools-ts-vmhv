@@ -207,6 +207,7 @@ Supongamos que tenemos un arreglo de objetos que representan productos:
   | 1 | blue | S | 10  
   | 2 | blue | M | 12  
   | 3 | red | M | 8 
+
 Y se necesita una actualizacion requerida:
   | id  | color | tamaño | Precio 
   | ------ | ------ | ------ | ------  
