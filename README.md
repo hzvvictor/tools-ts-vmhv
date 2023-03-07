@@ -21,7 +21,7 @@ Aquí se proporciona una breve descripción del proyecto (BETA).
 
 
 ### inArray
-#### `inArray.isSubset`
+#### _inArray.isSubset_
   Comprueba si un arreglo es un subconjunto de otro arreglo más grande.
 
 ```javascript
@@ -33,7 +33,7 @@ const bigArr = [2, 4, 6];
 
 console.log(isSubset(smallArr, bigArr)); // true
 ```
-#### `inArray.getMaxValue`
+#### _inArray.getMaxValue_
   Encuentra el valor máximo y su índice en un arreglo de números.
 
 ```javascript
@@ -44,7 +44,7 @@ const numeros = [5, 9, 3, 2, 8, 1];
 const resultado = getMaxValue(numeros);
 console.log(`El valor máximo es ${resultado.value} y se encuentra en la posición ${resultado.index}`)//`El valor máximo es 8 y se encuentra en la posición 4
 ```
-#### `inArray.removeDuplicates`
+#### _inArray.removeDuplicates_
   Elimina elementos duplicados de un array y devuelve un nuevo array sin repeticiones.
 
 ```javascript
@@ -53,7 +53,7 @@ const { removeDuplicates } = inArray;
 console.log(removeDuplicates([1, 2, 1, 2]))// [1, 2]
 console.log(removeDuplicates([100,200,100]))// [100, 200]
 ```
-#### `inArray.isEmpty`
+#### _inArray.isEmpty_
   Esta función verifica si un array está vacío.
 
 ```javascript
@@ -63,7 +63,7 @@ const { isEmpty } = inArray;
 const result1 = isEmpty([1, 2, 3]); // false
 const result2 = isEmpty([]); // true
 ```
-#### `inArray.last`
+#### _inArray.last_
   Esta función obtiene el último elemento de un arreglo.
 
 ```javascript
@@ -73,7 +73,7 @@ const result1 = inArray.last([1, 2, 3]); // 3
 const result2 = inArray.last([900, 300]); // 300
 ```
 ### inArrayObjects
-#### `inArrayObjects.count`
+#### _inArrayObjects.count_
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
 ```javascript
@@ -91,7 +91,7 @@ const data = [
 const result = inArrayObjects.count(data, 'address.city', 'New York');
 console.log(result); // 2
 ```
-#### `inArrayObjects.setPropByFilter`
+#### _inArrayObjects.setPropByFilter_
   Actualiza las propiedades de un array de objetos en base a una propiedad anidada y valor constante.
   Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
   | Producto | Categoria | Precio | Nuevo precio
@@ -126,7 +126,7 @@ console.log(updatedProducts);
   { id: 3, name: 'Producto C', category: 'Category A', price: 15 }
 ]
 ```
-#### `inArrayObjects.groupByNestedProperty`
+#### _inArrayObjects.groupByNestedProperty_
   Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
 ```javascript
 import { mergeArraysByProperty } from 'tsmuf/inArrayObjects';
@@ -159,7 +159,7 @@ console.log(personasPorEdad);
 ```
 
   Otras documentaciones se estan trabajando :)...
-#### `inArrayObjects.mergeArraysByProperty`
+#### _inArrayObjects.mergeArraysByProperty_
   Agrupa por una propiedad y fusiona los arrays.
   Devolviendo un objeto con las propiedades agrupadas como claves y los valores de los arrays combinados como valores.
   Por ejemplo queremos agruparlos por 'country' los array de 'customers' con 'orders'.
@@ -198,7 +198,7 @@ Esto produciría la siguiente salida:
   Mexico: { customers: [ ... ], orders: [] }
 }
 ```
-#### `inArrayObjects.setPropByPropValue`
+#### _inArrayObjects.setPropByPropValue_
   Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
 
 Supongamos que tenemos un arreglo de objetos que representan productos:
@@ -244,7 +244,7 @@ Esto produciría la siguiente salida:
   { id: 3, details: { color: 'red', size: 'M', price: 15 } }
 ]
 ```
-#### `inArrayObjects.sortByProperty`
+#### _inArrayObjects.sortByProperty_
   Ordena un array de objetos por una propiedad anidada específica, de manera ascendente o descendente.
 Supongamos que tenemos un array de objetos que representan canciones, y queremos ordenarlas por el año de lanzamiento de manera descendente:
 ```javascript
@@ -284,7 +284,7 @@ Esto produciría la siguiente salida:
   }
 ]
 ```
-#### `inArrayObjects.changeValueByPropVal`
+#### _inArrayObjects.changeValueByPropVal_
   
 ```javascript
 import { changeValueByPropVal } from 'tsmuf/inArrayObjects';
@@ -296,7 +296,7 @@ Para
 Esto produciría la siguiente salida:
 ```javascript
 ```
-#### `inArrayObjects.filterByCondition`
+#### _inArrayObjects.filterByCondition_
   
 ```javascript
 import { filterByCondition } from 'tsmuf/inArrayObjects';
@@ -308,7 +308,7 @@ Para
 Esto produciría la siguiente salida:
 ```javascript
 ```
-#### `inArrayObjects.filterByPropertyValue`
+#### _inArrayObjects.filterByPropertyValue_
   
 ```javascript
 import { filterByPropertyValue } from 'tsmuf/inArrayObjects';
@@ -320,7 +320,7 @@ Para
 Esto produciría la siguiente salida:
 ```javascript
 ```
-#### `inArrayObjects.filterExcludeByPropertyValue`
+#### _inArrayObjects.filterExcludeByPropertyValue_
   
 ```javascript
 import { filterExcludeByPropertyValue } from 'tsmuf/inArrayObjects';
@@ -332,7 +332,7 @@ Para
 Esto produciría la siguiente salida:
 ```javascript
 ```
-#### `inArrayObjects.getMaxPropertyValue`
+#### _inArrayObjects.getMaxPropertyValue_
   
 ```javascript
 import { getMaxPropertyValue } from 'tsmuf/inArrayObjects';
@@ -345,7 +345,7 @@ Esto produciría la siguiente salida:
 ```javascript
 ```
 ### inDir
-#### `inDir.read`
+#### _inDir.read_
   
 ```javascript
 import { read } from 'tsmuf/inDir';
@@ -360,7 +360,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inDir.rename`
+#### _inDir.rename_
   
 ```javascript
 import { rename } from 'tsmuf/inDir';
@@ -375,7 +375,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inDir.move`
+#### _inDir.move_
   
 ```javascript
 import { move } from 'tsmuf/inDir';
@@ -390,7 +390,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inDir.del`
+#### _inDir.del_
   
 ```javascript
 import { del } from 'tsmuf/inDir';
@@ -405,7 +405,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inDir.getStats`
+#### _inDir.getStats_
   
 ```javascript
 import { getStats } from 'tsmuf/inDir';
@@ -421,7 +421,7 @@ Salida:
 ```javascript
 ```
 ### inFile
-#### `inFile.write`
+#### _inFile.write_
   
 ```javascript
 import { write } from 'tsmuf/inFile';
@@ -436,7 +436,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inFile.del`
+#### _inFile.del_
   
 ```javascript
 import { del } from 'tsmuf/inFile';
@@ -451,7 +451,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inFile.move`
+#### _inFile.move_
   
 ```javascript
 import { move } from 'tsmuf/inFile';
@@ -466,7 +466,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inFile.rename`
+#### _inFile.rename_
   
 ```javascript
 import { rename } from 'tsmuf/inFile';
@@ -481,7 +481,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inFile.getStats`
+#### _inFile.getStats_
   
 ```javascript
 import { getStats } from 'tsmuf/inFile';
@@ -497,7 +497,7 @@ Salida:
 ```javascript
 ```
 ### inObject
-#### `inObject.getCountByValues`
+#### _inObject.getCountByValues_
   
 ```javascript
 import { getCountByValues } from 'tsmuf/inObject';
@@ -512,7 +512,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inObject.getMaxValue`
+#### _inObject.getMaxValue_
   
 ```javascript
 import { getMaxValue } from 'tsmuf/inObject';
@@ -527,7 +527,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inObject.isEmpty`
+#### _inObject.isEmpty_
   
 ```javascript
 import { isEmpty } from 'tsmuf/inObject';
@@ -542,7 +542,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inObject.mapKeys`
+#### _inObject.mapKeys_
   
 ```javascript
 import { mapKeys } from 'tsmuf/inObject';
@@ -557,7 +557,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inObject.mergeDeep`
+#### _inObject.mergeDeep_
   
 ```javascript
 import { mergeDeep } from 'tsmuf/inObject';
@@ -572,7 +572,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inObject.sortByKey`
+#### _inObject.sortByKey_
   
 ```javascript
 import { sortByKey } from 'tsmuf/inObject';
@@ -587,7 +587,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inObject.inNestedProperty`
+#### _inObject.inNestedProperty_
   
 ```javascript
 import { inNestedProperty } from 'tsmuf/inObject';
@@ -603,7 +603,7 @@ Salida:
 ```javascript
 ```
 ### inRegex
-#### `inRegex.isSnakeCase`
+#### _inRegex.isSnakeCase_
   
 ```javascript
 import { isSnakeCase } from 'tsmuf/inRegex';
@@ -618,7 +618,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inRegex.isCamelCase`
+#### _inRegex.isCamelCase_
   
 ```javascript
 import { isCamelCase } from 'tsmuf/inRegex';
@@ -633,7 +633,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inRegex.isCapitalized`
+#### _inRegex.isCapitalized_
   
 ```javascript
 import { isCapitalized } from 'tsmuf/inRegex';
@@ -648,7 +648,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inRegex.isWord`
+#### _inRegex.isWord_
   
 ```javascript
 import { isWord } from 'tsmuf/inRegex';
@@ -664,7 +664,7 @@ Salida:
 ```javascript
 ```
 ### inString
-#### `inString.camelToSnake`
+#### _inString.camelToSnake_
   
 ```javascript
 import { camelToSnake } from 'tsmuf/inString';
@@ -679,7 +679,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inString.snakeToCamel`
+#### _inString.snakeToCamel_
   
 ```javascript
 import { snakeToCamel } from 'tsmuf/inString';
@@ -694,7 +694,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inString.snakeToSnakeUpper`
+#### _inString.snakeToSnakeUpper_
   
 ```javascript
 import { snakeToSnakeUpper } from 'tsmuf/inString';
@@ -709,7 +709,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-#### `inString.toCamelAndSnakeCase`
+#### _inString.toCamelAndSnakeCase_
   
 ```javascript
 import { toCamelAndSnakeCase } from 'tsmuf/inString';
