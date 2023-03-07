@@ -310,44 +310,76 @@ Esto produciría la siguiente salida:
 ### inDir
 ___
 #### _inDir.read_
-   Lee el contenido de un directorio.
-   - De forma recursiva (opcional)
-   - Parametros un objeto: { dirPath, recursive = false }
-   - Devuelve: {  files: string[];  error?: Error;}
-```javascript
-import { read } from 'tsmuf/inDir';
+#### Uso de la función read
+La función `read` permite leer el contenido de un directorio y obtener los archivos encontrados en el mismo. También es posible realizar la lectura de forma recursiva para obtener los archivos de los subdirectorios.
 
-const path = '.';
-const { error, files } = read({ dirPath: path });
-if (files.length > 0) {
-  console.log({ files });
+Para utilizar esta función, se debe importar desde el archivo donde se desea utilizar de la siguiente forma:
+```javascript
+import { read } from 'tsmuf/inFile';
+```
+Luego, se puede llamar a la función read de la siguiente forma:
+```javascript
+const response = read({ dirPath: '/ruta/del/directorio', recursive: true });
+
+if (response.error) {
+  console.error(response.error);
+} else {
+  console.log(response.files);
 }
 ```
+Donde `dirPath` es la ruta del directorio a leer y `recursive` es un valor booleano opcional que indica si se desea realizar la lectura de forma recursiva. En la respuesta de la función se obtiene un objeto con la propiedad `files` que es un array con la lista de archivos encontrados en el directorio y sus subdirectorios.
+
+En caso de existir algún error durante la lectura del directorio, se devuelve un objeto con la propiedad error que contiene el error generado.
 ___
-#### _inDir.rename_
-  Renombra a un arhivo o directorio.
-   - Parametros: (pathCurrent: string, newName: string)
-   - Devuelve: { mensaje: string; error?: Error }
+#### _inDir.rename_ ||  _inFile.rename_
+  La función rename permite renombrar un archivo o un directorio en una ruta determinada.
+##### Uso
+Para utilizar la función rename, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
+```javascript
+import { rename } from 'tsmuf/inDir';
+```
+```javascript
+import { rename } from 'tsmuf/inFile';
+```
+ Luego se puede llamar a la función rename pasándole la ruta del archivo o directorio a renombrar y el nuevo nombre como argumentos.
 ```javascript
 import { rename } from 'tsmuf/inDir';
 
-const pathCurrent = './example/dir';
-const newName = 'dirNewName';
-const { error, mensaje } = rename(pathCurrent, newName);
-if (!error) console.log(mensaje); 
+const pathCurrent = '/ruta/al/archivo_o_directorio';
+const newName = 'nuevo_nombre';
+
+const response = rename(pathCurrent, newName);
+if (response.error) {
+  console.error(response.error);
+} else {
+  console.log(response.mensaje);
+}
 ```
 ___
-#### _inDir.move_
-    Renombra a un arhivo o directorio.
-   - Parametros: (pathCurrent: string, newPath: string)
-   - Devuelve: { mensaje: string; error?: Error }
+#### _inDir.move_ || _inFile.move_
+  La función move permite renombrar un archivo o un directorio en una ruta determinada.
+##### Uso
+Para utilizar la función move, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
 ```javascript
 import { move } from 'tsmuf/inDir';
+```
+```javascript
+import { move } from 'tsmuf/inFile';
+```
+  Ejemplo
+```javascript
+import { move } from 'tsmuf/inDir'
 
-const path = './example/dir';
-const newPath = '.';
-const { error, mensaje } = rename(path, newPath);
-if (!error) console.log(mensaje); 
+// Ejemplo de uso de la función move para mover un archivo
+const archivoActual = '/home/usuario/documentos/archivo.txt';
+const nuevaUbicacion = '/home/usuario/respaldo/archivo.txt';
+
+const resultado = move(archivoActual, nuevaUbicacion);
+if (resultado.error) {
+  console.log(resultado.error);
+} else {
+  console.log(resultado.mensaje);
+}
 ```
 ___
 #### _inDir.del_
@@ -388,7 +420,6 @@ ___
 #### _inFile.write_
    Crea, añade o sobreescribe contenido de un archivo
     - Parametros: (path: string, content: string, option: 'create' | 'append' | 'overwrite')
-    - 
 ```javascript
 import { write } from 'tsmuf/inFile';
 
