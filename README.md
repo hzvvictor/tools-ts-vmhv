@@ -202,18 +202,18 @@ Esto produciría la siguiente salida:
 >Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
 
 Supongamos que tenemos un arreglo de objetos que representan productos:
-  | id  | color | tamaño | Precio 
-  | ------ | ------ | ------ | ------  
-  | 1 | blue | S | 10  
-  | 2 | blue | M | 12  
-  | 3 | red | M | 8 
+| id  | color | tamaño | Precio |
+| ------ | ------ | ------ | ------ |
+| 1 | blue | S | 10 |
+| 2 | blue | M | 12 |
+| 3 | red | M | 8 |
 
 Y se necesita una actualizacion requerida:
-  | id  | color | tamaño | Precio 
-  | ------ | ------ | ------ | ------  
-  | 1 | green | S | 10  
-  | 2 | blue | M | 15  
-  | 3 | red | M | 15
+| id  | color | tamaño | Precio |
+| ------ | ------ | ------ | ------ |
+| 1 | green | S | 10 |
+| 2 | blue | M | 15 |
+| 3 | red | M | 15 |
 
 Entonces queremos cambiar el precio a 15 cuando sea de color rojo y precio 12,
 , ademas  queremos cambiar el color a verde los que sean de valor 10. 
