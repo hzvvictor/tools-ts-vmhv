@@ -33,6 +33,7 @@ const bigArr = [2, 4, 6];
 
 console.log(isSubset(smallArr, bigArr)); // true
 ```
+___
 #### _inArray.getMaxValue_
   Encuentra el valor máximo y su índice en un arreglo de números.
 
@@ -44,6 +45,7 @@ const numeros = [5, 9, 3, 2, 8, 1];
 const resultado = getMaxValue(numeros);
 console.log(`El valor máximo es ${resultado.value} y se encuentra en la posición ${resultado.index}`)//`El valor máximo es 8 y se encuentra en la posición 4
 ```
+___
 #### _inArray.removeDuplicates_
   Elimina elementos duplicados de un array y devuelve un nuevo array sin repeticiones.
 
@@ -53,6 +55,7 @@ const { removeDuplicates } = inArray;
 console.log(removeDuplicates([1, 2, 1, 2]))// [1, 2]
 console.log(removeDuplicates([100,200,100]))// [100, 200]
 ```
+___
 #### _inArray.isEmpty_
   Esta función verifica si un array está vacío.
 
@@ -63,6 +66,7 @@ const { isEmpty } = inArray;
 const result1 = isEmpty([1, 2, 3]); // false
 const result2 = isEmpty([]); // true
 ```
+___
 #### _inArray.last_
   Esta función obtiene el último elemento de un arreglo.
 
@@ -73,6 +77,7 @@ const result1 = inArray.last([1, 2, 3]); // 3
 const result2 = inArray.last([900, 300]); // 300
 ```
 ### inArrayObjects
+___
 #### _inArrayObjects.count_
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
@@ -91,6 +96,7 @@ const data = [
 const result = inArrayObjects.count(data, 'address.city', 'New York');
 console.log(result); // 2
 ```
+___
 #### _inArrayObjects.setPropByFilter_
   Actualiza las propiedades de un array de objetos en base a una propiedad anidada y valor constante.
   Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
@@ -126,6 +132,7 @@ console.log(updatedProducts);
   { id: 3, name: 'Producto C', category: 'Category A', price: 15 }
 ]
 ```
+___
 #### _inArrayObjects.groupByNestedProperty_
   Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
 ```javascript
@@ -159,6 +166,7 @@ console.log(personasPorEdad);
 ```
 
   Otras documentaciones se estan trabajando :)...
+___
 #### _inArrayObjects.mergeArraysByProperty_
   Agrupa por una propiedad y fusiona los arrays.
   Devolviendo un objeto con las propiedades agrupadas como claves y los valores de los arrays combinados como valores.
@@ -198,6 +206,7 @@ Esto produciría la siguiente salida:
   Mexico: { customers: [ ... ], orders: [] }
 }
 ```
+___
 #### _inArrayObjects.setPropByPropValue_
   Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
 
@@ -244,6 +253,7 @@ Esto produciría la siguiente salida:
   { id: 3, details: { color: 'red', size: 'M', price: 15 } }
 ]
 ```
+___
 #### _inArrayObjects.sortByProperty_
   Ordena un array de objetos por una propiedad anidada específica, de manera ascendente o descendente.
 Supongamos que tenemos un array de objetos que representan canciones, y queremos ordenarlas por el año de lanzamiento de manera descendente:
@@ -284,54 +294,7 @@ Esto produciría la siguiente salida:
   }
 ]
 ```
-#### _inArrayObjects.changeValueByPropVal_
-  
-```javascript
-import { changeValueByPropVal } from 'tsmuf/inArrayObjects';
-
-```
-Para
-```javascript
-```
-Esto produciría la siguiente salida:
-```javascript
-```
-#### _inArrayObjects.filterByCondition_
-  
-```javascript
-import { filterByCondition } from 'tsmuf/inArrayObjects';
-
-```
-Para
-```javascript
-```
-Esto produciría la siguiente salida:
-```javascript
-```
-#### _inArrayObjects.filterByPropertyValue_
-  
-```javascript
-import { filterByPropertyValue } from 'tsmuf/inArrayObjects';
-
-```
-Para
-```javascript
-```
-Esto produciría la siguiente salida:
-```javascript
-```
-#### _inArrayObjects.filterExcludeByPropertyValue_
-  
-```javascript
-import { filterExcludeByPropertyValue } from 'tsmuf/inArrayObjects';
-
-```
-Para
-```javascript
-```
-Esto produciría la siguiente salida:
-```javascript
-```
+___
 #### _inArrayObjects.getMaxPropertyValue_
   
 ```javascript
@@ -345,6 +308,7 @@ Esto produciría la siguiente salida:
 ```javascript
 ```
 ### inDir
+___
 #### _inDir.read_
   
 ```javascript
@@ -360,6 +324,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inDir.rename_
   
 ```javascript
@@ -375,6 +340,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inDir.move_
   
 ```javascript
@@ -390,6 +356,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inDir.del_
   
 ```javascript
@@ -405,6 +372,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inDir.getStats_
   
 ```javascript
@@ -421,6 +389,7 @@ Salida:
 ```javascript
 ```
 ### inFile
+___
 #### _inFile.write_
   
 ```javascript
@@ -436,6 +405,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inFile.del_
   
 ```javascript
@@ -451,6 +421,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inFile.move_
   
 ```javascript
@@ -466,6 +437,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inFile.rename_
   
 ```javascript
@@ -481,6 +453,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inFile.getStats_
   
 ```javascript
@@ -497,6 +470,7 @@ Salida:
 ```javascript
 ```
 ### inObject
+___
 #### _inObject.getCountByValues_
   
 ```javascript
@@ -512,6 +486,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inObject.getMaxValue_
   
 ```javascript
@@ -527,6 +502,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inObject.isEmpty_
   
 ```javascript
@@ -542,6 +518,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inObject.mapKeys_
   
 ```javascript
@@ -557,6 +534,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inObject.mergeDeep_
   
 ```javascript
@@ -572,6 +550,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inObject.sortByKey_
   
 ```javascript
@@ -587,6 +566,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inObject.inNestedProperty_
   
 ```javascript
@@ -603,6 +583,7 @@ Salida:
 ```javascript
 ```
 ### inRegex
+___
 #### _inRegex.isSnakeCase_
   
 ```javascript
@@ -618,6 +599,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inRegex.isCamelCase_
   
 ```javascript
@@ -633,6 +615,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inRegex.isCapitalized_
   
 ```javascript
@@ -648,6 +631,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inRegex.isWord_
   
 ```javascript
@@ -664,6 +648,7 @@ Salida:
 ```javascript
 ```
 ### inString
+___
 #### _inString.camelToSnake_
   
 ```javascript
@@ -679,6 +664,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inString.snakeToCamel_
   
 ```javascript
@@ -694,6 +680,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inString.snakeToSnakeUpper_
   
 ```javascript
@@ -709,6 +696,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
+___
 #### _inString.toCamelAndSnakeCase_
   
 ```javascript
