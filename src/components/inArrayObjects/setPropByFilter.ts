@@ -39,17 +39,3 @@ function setPropByFilter<T>(objects: T[], updates: Update<any>[]): T[] {
 }
 export { setPropByFilter as default }
 
-const products = [
-  { id: 1, name: 'Producto A', category: 'Category A', price: 10 },
-  { id: 2, name: 'Producto B', category: 'Category B', price: 20 },
-  { id: 3, name: 'Producto C', category: 'Category A', price: 30 }
-];
-
-const updates = [
-  { property: 'price', value: 15, when: (obj) => obj.category === 'Category A' },
-  { property: 'price', value: 50, when: (obj) => obj.price === 20 }
-];
-
-const updatedProducts = setPropByFilter(products, updates);
-
-console.log(updatedProducts);

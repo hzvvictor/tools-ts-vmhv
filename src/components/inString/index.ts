@@ -1,9 +1,20 @@
-import toCase from "./toCase";
+import {
+  camelToSnake,
+  snakeToCamel,
+  snakeToSnakeUpper,
+  toCamelAndSnakeCase
+} from "./toCase";
 
 const functions = {
-  toCase
+  camelToSnake,
+  snakeToCamel,
+  snakeToSnakeUpper,
+  toCamelAndSnakeCase,
 }
 export {
   functions as default,
-  toCase
+  camelToSnake,
+  snakeToCamel,
+  snakeToSnakeUpper,
+  toCamelAndSnakeCase,
 }

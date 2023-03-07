@@ -28,7 +28,14 @@ function updateNestedProperty<T>(
   nestedObj[props[props.length - 1]] = value;
   return newObj;
 }
-
+/**
+ * Actualiza las propiedades de los objetos de un array, utilizando detalles de actualización que especifican la propiedad que se actualizará, el valor de actualización, un objeto de filtro para aplicar la actualización solo a los objetos que cumplan con los criterios de valor constante y un valor predeterminado opcional.
+ *
+ * @template T - Tipo del objeto de entrada
+ * @param {T[]} arr - Array de objetos a actualizar
+ * @param {UpdateDetails<T>[]} updates - Lista de detalles de actualización
+ * @returns {T[]} - Array de objetos actualizados
+ */
 function setPropByConstVals<T>(
   arr: T[],
   updates: UpdateDetails<T>[]
@@ -59,94 +66,5 @@ function checkFilter<T>(item: T, filter: Filter<T>): boolean {
     return propertyValue === value;
   });
 }
-
-interface Product {
-  id: number;
-  details: {
-    color: string;
-    size: string;
-    price: number;
-  };
-}
-
-interface Product {
-  id: number;
-  details: {
-    color: string;
-    size: string;
-    price: number;
-  };
-}
-
-const products: Product[] = [
-  {
-    id: 1,
-    details: {
-      color: 'blue',
-      size: 'S',
-      price: 10,
-    },
-  },
-  {
-    id: 2,
-    details: {
-      color: 'blue',
-      size: 'M',
-      price: 12,
-    },
-  },
-  {
-    id: 3,
-    details: {
-      color: 'red',
-      size: 'M',
-      price: 8,
-    },
-  },
-];
-
-const updates = [
-  {
-    property: 'details.price',
-    value: 15,
-    when: { 'details.color': 'red', 'details.price': 12 },
-  },
-  {
-    property: 'details.color',
-    value: 'green',
-    when: { 'details.price': 10 },
-  },
-];
-
-const updatedProducts = setPropByConstVals(products, updates);
-
-console.log(updatedProducts);
-/* [
-  {
-    "id": 1,
-    "details": {
-      "color": "blue",
-      "size": "S",
-      "price": 10
-    }
-  },
-  {
-    "id": 2,
-    "details": {
-      "color": "blue",
-      "size": "M",
-      "price": 15
-    }
-  },
-  {
-    "id": 3,
-    "details": {
-      "color": "red",
-      "size": "M",
-      "price": 8
-    }
-  }
-] */
-
 
 export { setPropByConstVals as default }
