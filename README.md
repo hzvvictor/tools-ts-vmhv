@@ -412,9 +412,16 @@ ___
 #### _inDir.getStats_ || _inFile.getStats_
 La función getStats permite obtener información sobre los stats de un archivo o directorio en una ruta específica.
 #### Uso de la función getStats
+Para utilizar la función `getStats`, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
+```javascript
+import { getStats } from 'tsmuf/inDir';
+```
+```javascript
+import { getStats } from 'tsmuf/inFile';
+```
 La función toma un parámetro path que representa la ruta del archivo o directorio que se quiere analizar. Retorna un objeto que contiene la información de los stats, como si es un archivo o directorio, el tamaño, la fecha de creación y la fecha de modificación. Si la ruta no existe o se produce un error al intentar obtener los stats, la función retorna null.
 ```javascript 
-import { getStats } from 'tsmuf';
+import { getStats } from 'tsmuf/inDir';
 
 const statsInfo = getStats('/path/to/file');
 
