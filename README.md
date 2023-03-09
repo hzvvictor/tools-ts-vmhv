@@ -703,6 +703,27 @@ console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized')); // "snake_To
 console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized', true)); // "Snake_To_Snake_Capitalized"
 ```
 ___
+## inCli
+### Indice
+- [question](#inCliCamelToSnake)
+### Impotacion
+```javascript
+import inCli from 'tsmuf/inCli';
+```
+___
+### _inCli.question_
+Hace una pregunta en la consola usando las utilidades integradas de nodejs.
+
+Ejemplo queremos saber la edad:
+```javascript
+question('Introduce la edad: ')
+  .then(res => console.log(`La edad es ${res}`))
+```
+He introducimos 21 en la consola, el resultado seria:
+```log
+"La edad es 21"
+```
+___
 
 ## Licencia
  Este proyecto está bajo la licencia [MIT](LICENSE). Consulta el archivo [LICENSE](LICENSE) para obtener más información.
