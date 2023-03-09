@@ -614,38 +614,25 @@ Salida:
 |--|--|--|--|
 ___
 ### _inObject.mergeDeep_
-  
+La función mergeDeep toma una cantidad arbitraria de objetos como argumentos y devuelve un nuevo objeto que es la combinación profunda de todos ellos.
+#### Ejemplo
 ```javascript
 import { mergeDeep } from 'tsmuf/inObject';
+const obj1 = { a: 1, b: { c: 2, } };
+const obj2 = { b: { d: 3, }, e: 4 };
+const merged = mergeDeep(obj1, obj2);
 
-const input = '';
-const output = mergeDeep(input);
-console.log(output); 
-```
-  
-```javascript
+// merged será igual a:
+// { a: 1, b: { c: 2, d: 3, }, e: 4 }
+
 ```
 Salida:
 ```javascript
+{ a: 1, b: { c: 2, d: 3, }, e: 4 }
 ```
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
-### _inObject.inNestedProperty_
-  
-```javascript
-import { inNestedProperty } from 'tsmuf/inObject';
-
-const input = '';
-const output = inNestedProperty(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
-```
 ## inRegex
 Funciones de inRegex
 La librería inRegex proporciona varias funciones para validar diferentes patrones de texto.
@@ -656,11 +643,11 @@ import inRegex from 'tsmuf/inRegex';
 ```
 ___
 ### Indice 
-- [isSnakeCase](#inRegexIsSnakeCase)
-- [isCamelCase](#inRegexIsCamelCase)
-- [isCapitalized](#inRegexIsCapitalized)
-- [isSnakeCase](#inRegexIsSnakeCase)
-- [isWord](#inRegexIsWord)
+- [isSnakeCase](#IsSnakeCase)
+- [isCamelCase](#IsCamelCase)
+- [isCapitalized](#IsCapitalized)
+- [isSnakeCase](#IsSnakeCase)
+- [isWord](#IsWord)
 ___
 ### isSnakeCase
 
