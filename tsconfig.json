@@ -2,7 +2,7 @@
   "compilerOptions": {
     "esModuleInterop": true,
     "module": "CommonJS",
-    "outDir": "dist",
+    "outDir": ".",
     "rootDir": "src/components"
   },
   "exclude": [

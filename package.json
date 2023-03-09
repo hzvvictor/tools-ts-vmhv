@@ -1,7 +1,7 @@
 {
   "name": "tsmuf",
-  "version": "1.0.9",
-  "main": "dist/index.js",
+  "version": "1.0.11",
+  "main": "index.js",
   "scripts": {
     "prepare": "npm run build",
     "build": "tsc --declaration",
