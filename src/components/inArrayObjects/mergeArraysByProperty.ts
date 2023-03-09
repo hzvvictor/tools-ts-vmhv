@@ -49,44 +49,5 @@ const mergeArraysByProperty = <T>(...arrs: MergeArray[]): MergedArrays<T> => {
 };
 
 export { mergeArraysByProperty as default };
-const example = () => {
-  interface Customer {
-    id: number;
-    name: string;
-    address: {
-      country: string;
-    };
-  }
 
-  interface Order {
-    id: number;
-    customerId: number;
-    total: number;
-    customer: {
-      address: {
-        country: string;
-      };
-    };
-  }
-  const customers: Customer[] = [
-    { id: 1, name: "John Doe", address: { country: "USA" } },
-    { id: 2, name: "Jane Doe", address: { country: "Canada" } },
-    { id: 3, name: "Bob Smith", address: { country: "USA" } },
-    { id: 4, name: "Alice Johnson", address: { country: "Mexico" } },
-  ];
-
-  const orders: Order[] = [
-    { id: 1, customerId: 1, total: 50, customer: { address: { country: "USA" } } },
-    { id: 2, customerId: 2, total: 100, customer: { address: { country: "Canada" } } },
-    { id: 3, customerId: 1, total: 25, customer: { address: { country: "USA" } } },
-    { id: 4, customerId: 3, total: 75, customer: { address: { country: "USA" } } },
-  ];
-
-  const combined = mergeArraysByProperty<Customer | Order>(
-    { from: customers, by: "address.country", as: 'customers' },
-    { from: orders, by: "customer.address.country", as: 'orders' }
-  );
-  console.log(combined);
-  console.log(combined.Mexico.customers[0]); // { id: 4, name: 'Alice Johnson', address: { country: 'Mexico' } }
-}
 

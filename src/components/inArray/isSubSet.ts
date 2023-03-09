@@ -7,4 +7,3 @@
 export default function isSubset<T>(smallArr: T[], bigArr: T[]): boolean {
   return smallArr.every(element => bigArr.includes(element));
 }
-console.log(isSubset([2, 4], [2, 4, 5]));

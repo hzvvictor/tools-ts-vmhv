@@ -24,13 +24,3 @@ const groupByNestedProperty = <T>(
   return resultado;
 }
 export { groupByNestedProperty as default }
-
-
-// const arr = [
-//   { id: 1, name: "John Doe", department: { name: "Sales", manager: { name: "Manager1" } } },
-//   { id: 2, name: "Jane Doe", department: { name: "Marketing", manager: { name: "Manager2" } } },
-//   { id: 3, name: "Bob Smith", department: { name: "Sales", manager: { name: "Manager1" } } },
-//   { id: 4, name: "Alice Johnson", department: { name: "IT", manager: { name: "Manager3" } } },
-// ];
-// const agrupado = groupByNestedProperty(arr, "department.name");
-// console.log(agrupado);

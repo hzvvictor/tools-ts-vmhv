@@ -20,12 +20,5 @@ const isByPattern = (pattern: string) => {
   return isSpecialChar
 }
 
-// console.log(isCharSpecialInPattern('\\')) // true
-// console.log(isCharSpecialInPattern('[\\]')) // true
-// console.log(isCharSpecialInPattern('w')) // false
-// console.log(isCharSpecialInPattern('d')) // false
-// console.log(isCharSpecialInPattern('*')) // true
-// console.log(isCharSpecialInPattern('[*]')) // true
-
 const isCharSpecialByPattern = isByPattern;
 export { isByPattern as default, isCharSpecialByPattern }

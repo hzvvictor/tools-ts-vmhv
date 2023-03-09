@@ -8,6 +8,7 @@ Aquí se proporciona una breve descripción del proyecto (BETA).
 3. Usa las funciones de la libreria;
 
 ## Uso
+  Es importante tener en cuenta que se recomienda utilizar JavaScript en lugar de TypeScript para evitar posibles errores de compatibilidad. Además, debes asegurarte de agregar la opción `type: "module"` en el archivo `package.json` para que se puedan importar los módulos adecuadamente.
   La librería incluye las siguientes funciones y utilidades:
 
 ## Indice
