@@ -17,3 +17,8 @@ export {
   isCapitalized,
   isWord,
 }
+
+console.log(isSnakeCase("snake_case")); //
+console.log(isCamelCase("camelCase")); //
+console.log(isCapitalized("Capitalized")); //
+console.log(isWord("hello")); //

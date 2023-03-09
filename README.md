@@ -20,7 +20,7 @@ Aquí se proporciona una breve descripción del proyecto (BETA).
 - [inString](#inString)
 
 
-### inArray
+## inArray
 ### Indice
 - [isSubset](#inArrayisSubset)
 - [getMaxValue](#inArraygetMaxValue)
@@ -93,7 +93,7 @@ const result2 = inArray.last([900, 300]); // 300
 ```
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
 |--|--|--|--|
-### inArrayObjects
+## inArrayObjects
 ___
 ### Indice 
 - [Indice Principal 🏠](#indice)
@@ -103,7 +103,6 @@ ___
 - [mergeArraysByProperty](#inArrayObjectsMergeArraysByProperty)
 - [setPropByPropValue](#inArrayObjectsSetPropByPropValue)
 - [sortByProperty](#inArrayObjectsSortByProperty)
-- [getMaxPropertyValue](#inArrayObjectsGetMaxPropertyValue)
 #### _inArrayObjects.count_
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
@@ -333,8 +332,7 @@ Esto produciría la siguiente salida:
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
 |--|--|--|--|
-### inFile
-### inDir
+## File System
 ### Indice 
 - [Indice Principal 🏠](#indice)
 - [File write](#inFileWrite)
@@ -344,7 +342,7 @@ ___
 - [Del](#del)
 - [GetStats](#getStats)
 ___
-#### _inFile.write_
+### _inFile.write_
    Crea, añade o sobreescribe contenido de un archivo
     - Parametros: (path: string, content: string, option: 'create' | 'append' | 'overwrite')
 ```javascript
@@ -358,8 +356,7 @@ if (!error)
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 ___
-#### _inDir.read_
-
+### _inDir.read_
 #### Uso de la función read
 La función `read` permite leer el contenido de un directorio y obtener los archivos encontrados en el mismo. También es posible realizar la lectura de forma recursiva para obtener los archivos de los subdirectorios.
 
@@ -383,7 +380,7 @@ En caso de existir algún error durante la lectura del directorio, se devuelve u
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 ___
-#### _rename_
+### _rename_
 #### Uso de la función rename
   La función `rename` permite renombrar un archivo o un directorio en una ruta determinada.
 ##### Uso
@@ -411,7 +408,7 @@ if (response.error) {
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 ___
-#### _move_
+### _move_
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 #### Uso de la función move
@@ -442,7 +439,7 @@ if (resultado.error) {
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 ___
-#### _del_
+### _del_
 Elimina un archivo o directorio en la ruta especificada.
 
 ##### Parámetros
@@ -470,7 +467,7 @@ if (response.error) {
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 ___
-#### _getStats_
+### _getStats_
 La función getStats permite obtener información sobre los stats de un archivo o directorio en una ruta específica.
 #### Uso de la función getStats
 Para utilizar la función `getStats`, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
@@ -508,7 +505,7 @@ interface StatsInfo {
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 ___
-### inObject
+## inObject
 ### Indice 
 - [getCountByValues](#inObjectGetCountByValues)
 - [getMaxValue](#inObjectGetMaxValue)
@@ -518,7 +515,7 @@ ___
 - [sortByKey](#inObjectSortByKey)
 - [inNestedProperty](#inObjectInNestedProperty)
 ___
-#### _inObject.getCountByValues_
+### _inObject.getCountByValues_
   Importacion
 ```javascript
 import { getCountByValues } from 'tsmuf/inObject';
@@ -550,7 +547,7 @@ Salida:
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
-#### _inObject.getMaxValue_
+### _inObject.getMaxValue_
 ##### Función getMaxValue
 La función getMaxValue toma un objeto con claves de tipo string y valores de tipo number, y devuelve el valor máximo y su clave correspondiente dentro del objeto.
 Importacion:
@@ -573,7 +570,7 @@ El valor máximo es 5 y su clave es "b"
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
-#### _inObject.isEmpty_
+### _inObject.isEmpty_
 La función isEmpty toma un objeto y devuelve true si está vacío, es decir, si no tiene ninguna propiedad. De lo contrario, devuelve false.
 Importacion:
 ```javascript
@@ -596,7 +593,7 @@ Salida:
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
-#### _inObject.mapKeys_
+### _inObject.mapKeys_
   
 ```javascript
 import { mapKeys } from 'tsmuf/inObject';
@@ -614,7 +611,7 @@ Salida:
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
-#### _inObject.mergeDeep_
+### _inObject.mergeDeep_
   
 ```javascript
 import { mergeDeep } from 'tsmuf/inObject';
@@ -632,7 +629,7 @@ Salida:
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
-#### _inObject.inNestedProperty_
+### _inObject.inNestedProperty_
   
 ```javascript
 import { inNestedProperty } from 'tsmuf/inObject';
@@ -647,99 +644,61 @@ console.log(output);
 Salida:
 ```javascript
 ```
-### inRegex
-### Indice 
-- [isSnakeCase](#inRegexIsSnakeCase_)
-- [isCamelCase](#inRegexIsCamelCase_)
-- [isCapitalized](#inRegexIsCapitalized_)
-- [isSnakeCase](#inRegexIsSnakeCase_)
-- [isWord](#inRegexIsWord_)
+## inRegex
 Funciones de inRegex
 La librería inRegex proporciona varias funciones para validar diferentes patrones de texto.
 Aquí te mostramos algunos ejemplos sencillos de cómo utilizar las funciones:
-___
-#### _inRegex.isSnakeCase_
-  
-```javascript
-import { isSnakeCase } from 'tsmuf/inRegex';
-
-const input = '';
-const output = isSnakeCase(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
-```
-___
-#### _inRegex.isCamelCase_
-La función `isCamelCase` valida si una cadena está escrita en formato CamelCase, es decir, que comienza con una letra minúscula y cada palabra siguiente comienza con una letra mayúscula.
+### Impotacion
 ```javascript
 import inRegex from 'tsmuf/inRegex';
-
-console.log(inRegex.isCamelCase('estoEsCamelCase')); // Output: true
-console.log(inRegex.isCamelCase('EstoNoEsCamelCase')); // Output: false
 ```
-En este ejemplo, la función isCamelCase se utiliza para validar dos cadenas diferentes.
-- La primera cadena está escrita en formato CamelCase, por lo que la función devuelve `true`.
-- La segunda cadena no está escrita en CamelCase, por lo que la función devuelve `false`.
 ___
-#### _inRegex.isCapitalized_
-La función isCapitalized valida si una cadena comienza con una letra mayúscula.
-```javascript
-import inRegex from 'tsmuf/inRegex';
-
-console.log(inRegex.isCapitalized('Hola')); // Output: true
-console.log(inRegex.isCapitalized('mundo')); // Output: false
-```
-En este ejemplo, la función isCapitalized se utiliza para validar dos cadenas diferentes.
-- La primera cadena comienza con una letra mayúscula, por lo que la función devuelve `true`.
-- La segunda cadena no comienza con una letra mayúscula, por lo que la función devuelve `false`.
-
+### Indice 
+- [isSnakeCase](#inRegexIsSnakeCase)
+- [isCamelCase](#inRegexIsCamelCase)
+- [isCapitalized](#inRegexIsCapitalized)
+- [isSnakeCase](#inRegexIsSnakeCase)
+- [isWord](#inRegexIsWord)
 ___
-#### _inRegex.isSnakeCase_
-La función `isSnakeCase` valida si una cadena está escrita en formato snake_case, es decir, que todas las palabras están separadas por guiones bajos.
-```javascript
-import inRegex from 'tsmuf/inRegex';
+### isSnakeCase
 
-console.log(inRegex.isSnakeCase('esto_es_snake_case')); // Output: true
-console.log(inRegex.isSnakeCase('estoNoEsSnakeCase')); // Output: false
-```
-En este ejemplo, la función `isSnakeCase` se utiliza para validar dos cadenas diferentes. 
-- La primera cadena está escrita en formato snake_case, por lo que la función devuelve `true`.
-- La segunda cadena no está escrita en snake_case, por lo que la función devuelve `false`.
-#### _inRegex.isWord_
-La función isWord valida si una cadena está compuesta solo por letras, números y guiones bajos.
 ```javascript
-import inRegex from 'tsmuf/inRegex';
-
-console.log(inRegex.isWord('hola123')); // Output: true
-console.log(inRegex.isWord('¡Hola!')); // Output: false
+console.log(inRegex.isSnakeCase("snake_case")); // true
 ```
-En este ejemplo, la función isWord se utiliza para validar dos cadenas diferentes.
-- La primera cadena está compuesta solo por letras y números, por lo que la función devuelve `true`.
-- La segunda cadena contiene caracteres que no son letras ni números, por lo que la función devuelve `false`.
-### inString
+### isCamelCase
+
+```javascript
+console.log(inRegex.isCamelCase("camelCase")); // true
+```
+### isCapitalized
+
+```javascript
+console.log(inRegex.isCapitalized("Capitalized")); //true
+```
+### isWord
+
+```javascript
+console.log(inRegex.isWord("hello")); //true
+```
+## inString
 La librería inString proporciona funciones para manipular y transformar cadenas de texto.
-#### Impotacion
+### Impotacion
 ```javascript
-import inRegex from 'tsmuf/inRegex';
+import inString from 'tsmuf/inString';
 ```
 ___
-#### _inString.camelToSnake_
+### _inString.camelToSnake_
 Convierte una cadena de texto en formato camelCase a formato snake_case.
 ```javascript
 console.log(inString.camelToSnake('camelToSnake')); // camel_to_snake
 ```
-#### _inString.snakeToCamel_
+### _inString.snakeToCamel_
 Convierte una cadena de texto en formato snake_case a formato camelCase.
 ```javascript
 console.log(inString.snakeToCamel('this_is_snake_case')); // thisIsSnakeCase
 ```
 ___
-#### _inString.snakeToSnakeCapitalized_
+### _inString.snakeToSnakeCapitalized_
   Argumentos
  - `string`: El string que se desea convertir. Debe estar en formato snake_case.
  - `isFirstCapitalized` (opcional): Si se establece en true, la primera letra del resultado se capitalizará. Por defecto es `false`.
@@ -748,7 +707,7 @@ ___
 console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized', true)); // "Snake_To_Snake_Capitalized"
 ```
 ___
-#### _inString.toCamelAndSnakeCase_
+### _inString.toCamelAndSnakeCase_
   
 ```javascript
 import { toCamelAndSnakeCase } from 'tsmuf/inString';
