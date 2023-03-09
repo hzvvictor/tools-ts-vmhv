@@ -594,19 +594,21 @@ Salida:
 |--|--|--|--|
 ___
 ### _inObject.mapKeys_
-  
+La función `mapKeys` crea un nuevo objeto con las mismas propiedades que el objeto de origen, pero con los nombres de las propiedades transformadas por una función de mapeo.
+
+Aquí está el ejemplo del uso de la función `mapKeys`:
 ```javascript
 import { mapKeys } from 'tsmuf/inObject';
 
-const input = '';
-const output = mapKeys(input);
-console.log(output); 
-```
-  
-```javascript
+const myObject = { firstName: 'John', lastName: 'Doe' };
+const newObject = mapKeys(myObject, (key) => key.toUpperCase());
+
+console.log(newObject);
+// Output: { FIRSTNAME: 'John', LASTNAME: 'Doe' }
 ```
 Salida:
 ```javascript
+{ Output: { FIRSTNAME: 'John', LASTNAME: 'Doe' } }
 ```
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
