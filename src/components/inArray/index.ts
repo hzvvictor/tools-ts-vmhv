@@ -3,6 +3,7 @@ import getArrayOfMostRepeatedLength from "./getArrayOfMostRepeatedLength"
 import getLengthArrDictionary from "./getLengthArrDictionary"
 import getMaxValue from "./getMaxValue"
 import isEmpty from "./isEmpty"
+import isSubset from "./isSubSet"
 import removeDuplicates from "./removeDuplicates"
 const functions = {
   keysToObject, 
@@ -10,6 +11,7 @@ const functions = {
   getMaxValue,
   getArrayOfMostRepeatedLength,
   getLengthArrDictionary,
+  isSubset,
   removeDuplicates,
   isEmpty,
 }
@@ -21,6 +23,7 @@ export {
   getArrayOfMostRepeatedLength,
   getLengthArrDictionary,
   removeDuplicates,
+  isSubset,
   isEmpty,
 }
 
