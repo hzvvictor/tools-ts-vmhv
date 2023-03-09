@@ -1,20 +1,17 @@
 import {
   camelToSnake,
   snakeToCamel,
-  snakeToSnakeUpper,
-  toCamelAndSnakeCase
+  snakeToSnakeCapitalized,
 } from "./toCase";
 
 const functions = {
   camelToSnake,
   snakeToCamel,
-  snakeToSnakeUpper,
-  toCamelAndSnakeCase,
+  snakeToSnakeCapitalized,
 }
 export {
   functions as default,
   camelToSnake,
   snakeToCamel,
-  snakeToSnakeUpper,
-  toCamelAndSnakeCase,
+  snakeToSnakeCapitalized,
 }

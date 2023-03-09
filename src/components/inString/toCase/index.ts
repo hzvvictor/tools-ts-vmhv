@@ -1,17 +1,14 @@
 import camelToSnake from "./camelToSnake";
 import snakeToCamel from "./snakeToCamel";
-import snakeToSnakeUpper from "./snakeToSnakeUpper";
-import toCamelAndSnakeCase from "../../../../beta/toCamelAndSnakeCase";
+import snakeToSnakeCapitalized from "./snakeToSnakeCapitalized";
 
 export {
   camelToSnake,
   snakeToCamel,
-  snakeToSnakeUpper,
-  toCamelAndSnakeCase,
+  snakeToSnakeCapitalized,
 }
 export default {
   camelToSnake,
   snakeToCamel,
-  snakeToSnakeUpper,
-  toCamelAndSnakeCase,
+  snakeToSnakeCapitalized,
 }
