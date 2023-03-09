@@ -1,6 +1,7 @@
 # tsmuf
-
-Aquí se proporciona una breve descripción del proyecto (BETA). 
+Una libreria que contiene utilidades para trabajar con javascipt.
+- Se encuentra en fase de desarrollo (BETA). 
+- No soporta Typescript 
 
 ## Instalación
 1. Instala las dependencias: `npm install tsmuf`
