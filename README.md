@@ -547,7 +547,7 @@ Salida:
  1
  0
 ```
-| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
 #### _inObject.getMaxValue_
@@ -570,7 +570,7 @@ Salida:
 ```log
 El valor máximo es 5 y su clave es "b"
 ```
-| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
 #### _inObject.isEmpty_
@@ -593,7 +593,7 @@ Salida:
 ```log
 ¿El objeto está vacío? true
 ```
-| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
 #### _inObject.mapKeys_
@@ -611,7 +611,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
 #### _inObject.mergeDeep_
@@ -629,7 +629,7 @@ console.log(output);
 Salida:
 ```javascript
 ```
-| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-4)
 |--|--|--|--|
 ___
 #### _inObject.inNestedProperty_
@@ -648,6 +648,12 @@ Salida:
 ```javascript
 ```
 ### inRegex
+### Indice 
+- [isSnakeCase](#inRegexIsSnakeCase_)
+- [isCamelCase](#inRegexIsCamelCase_)
+- [isCapitalized](#inRegexIsCapitalized_)
+- [isSnakeCase](#inRegexIsSnakeCase_)
+- [isWord](#inRegexIsWord_)
 Funciones de inRegex
 La librería inRegex proporciona varias funciones para validar diferentes patrones de texto.
 Aquí te mostramos algunos ejemplos sencillos de cómo utilizar las funciones:
