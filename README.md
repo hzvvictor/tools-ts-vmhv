@@ -41,6 +41,8 @@ const bigArr = [2, 4, 6];
 console.log(isSubset(smallArr, bigArr)); // true
 ```
 ___
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
+|--|--|--|--|
 #### _inArray.getMaxValue_
   Encuentra el valor máximo y su índice en un arreglo de números.
 
@@ -53,6 +55,8 @@ const resultado = getMaxValue(numeros);
 console.log(`El valor máximo es ${resultado.value} y se encuentra en la posición ${resultado.index}`)//`El valor máximo es 8 y se encuentra en la posición 4
 ```
 ___
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
+|--|--|--|--|
 #### _inArray.removeDuplicates_
   Elimina elementos duplicados de un array y devuelve un nuevo array sin repeticiones.
 
@@ -63,6 +67,8 @@ console.log(removeDuplicates([1, 2, 1, 2]))// [1, 2]
 console.log(removeDuplicates([100,200,100]))// [100, 200]
 ```
 ___
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
+|--|--|--|--|
 #### _inArray.isEmpty_
   Esta función verifica si un array está vacío.
 
@@ -74,6 +80,8 @@ const result1 = isEmpty([1, 2, 3]); // false
 const result2 = isEmpty([]); // true
 ```
 ___
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
+|--|--|--|--|
 #### _inArray.last_
   Esta función obtiene el último elemento de un arreglo.
 
@@ -83,9 +91,12 @@ import { inArray } from 'tsmuf';
 const result1 = inArray.last([1, 2, 3]); // 3
 const result2 = inArray.last([900, 300]); // 300
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
+|--|--|--|--|
 ### inArrayObjects
 ___
 ### Indice 
+- [Indice Principal 🏠](#indice)
 - [count](#inArrayObjectsCount)
 - [setPropByFilter](#inArrayObjectsSetPropByFilter)
 - [groupByNestedProperty](#inArrayObjectsGroupByNestedProperty)
@@ -112,7 +123,8 @@ const result = inArrayObjects.count(data, 'address.city', 'New York');
 console.log(result); // 2
 ```
 ___
-#### [Volver a Indice ↩️️](#indice-2)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
+|--|--|--|--|
 #### _inArrayObjects.setPropByFilter_
   Actualiza las propiedades de un array de objetos en base a una propiedad anidada y valor constante.
   Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
@@ -149,7 +161,8 @@ console.log(updatedProducts);
 ]
 ```
 ___
-#### [Volver a Indice ↩️️](#indice-2)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
+|--|--|--|--|
 #### _inArrayObjects.groupByNestedProperty_
   Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
 ```javascript
@@ -184,7 +197,8 @@ console.log(personasPorEdad);
 
   Otras documentaciones se estan trabajando :)...
 ___
-#### [Volver a Indice ↩️️](#indice-2)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
+|--|--|--|--|
 #### _inArrayObjects.mergeArraysByProperty_
   Agrupa por una propiedad y fusiona los arrays.
   Devolviendo un objeto con las propiedades agrupadas como claves y los valores de los arrays combinados como valores.
@@ -225,7 +239,8 @@ Esto produciría la siguiente salida:
 }
 ```
 ___
-#### [Volver a Indice ↩️️](#indice-2)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
+|--|--|--|--|
 #### _inArrayObjects.setPropByPropValue_
   Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
 
@@ -273,7 +288,8 @@ Esto produciría la siguiente salida:
 ]
 ```
 ___
-#### [Volver a Indice ↩️️](#indice-2)
+| 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
+|--|--|--|--|
 #### _inArrayObjects.sortByProperty_
   Ordena un array de objetos por una propiedad anidada específica, de manera ascendente o descendente.
 Supongamos que tenemos un array de objetos que representan canciones, y queremos ordenarlas por el año de lanzamiento de manera descendente:
@@ -315,23 +331,35 @@ Esto produciría la siguiente salida:
 ]
 ```
 ___
-#### [Volver a Indice ↩️️](#indice-2)
-#### _inArrayObjects.getMaxPropertyValue_
-  
+| 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
+|--|--|--|--|
+### inFile
+### inDir
+### Indice 
+- [Indice Principal 🏠](#indice)
+- [File write](#inFileWrite)
+- [Dir read](#inDirRead)
+- [Rename](#rename)
+- [Move](#move)
+- [Del](#del)
+- [GetStats](#getStats)
+___
+#### _inFile.write_
+   Crea, añade o sobreescribe contenido de un archivo
+    - Parametros: (path: string, content: string, option: 'create' | 'append' | 'overwrite')
 ```javascript
-import { getMaxPropertyValue } from 'tsmuf/inArrayObjects';
+import { write } from 'tsmuf/inFile';
 
+const path = './text.txt';
+const { error, mensaje } = write(path, 'content', 'create');
+if (!error) 
+  console.log(mensaje); 
 ```
-Para
-```javascript
-```
-Esto produciría la siguiente salida:
-```javascript
-```
-#### [Volver a Indice ↩️️](#indice-2)
-### inDir 
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
 ___
 #### _inDir.read_
+
 #### Uso de la función read
 La función `read` permite leer el contenido de un directorio y obtener los archivos encontrados en el mismo. También es posible realizar la lectura de forma recursiva para obtener los archivos de los subdirectorios.
 
@@ -352,8 +380,10 @@ if (response.error) {
 Donde `dirPath` es la ruta del directorio a leer y `recursive` es un valor booleano opcional que indica si se desea realizar la lectura de forma recursiva. En la respuesta de la función se obtiene un objeto con la propiedad `files` que es un array con la lista de archivos encontrados en el directorio y sus subdirectorios.
 
 En caso de existir algún error durante la lectura del directorio, se devuelve un objeto con la propiedad error que contiene el error generado.
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
 ___
-#### _inDir.rename_ ||  _inFile.rename_
+#### _rename_
 #### Uso de la función rename
   La función `rename` permite renombrar un archivo o un directorio en una ruta determinada.
 ##### Uso
@@ -378,8 +408,12 @@ if (response.error) {
   console.log(response.mensaje);
 }
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
 ___
-#### _inDir.move_ || _inFile.move_
+#### _move_
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
 #### Uso de la función move
   La función `move` permite mover un archivo o un directorio en una ruta determinada.
 ##### Uso
@@ -405,8 +439,10 @@ if (resultado.error) {
   console.log(resultado.mensaje);
 }
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
 ___
-#### _inDir.del_ || _inFile.del_
+#### _del_
 Elimina un archivo o directorio en la ruta especificada.
 
 ##### Parámetros
@@ -415,6 +451,7 @@ Elimina un archivo o directorio en la ruta especificada.
 La función devuelve un objeto Response con los siguientes campos:
  - mensaje: Un mensaje que indica si la operación se realizó con éxito.
  - error (opcional): Si se produce un error, este campo contendrá una cadena de texto que describe el error.
+
 #### Uso de la función del
 ```javascript
 import { del } from 'tsmuf/inDir'
@@ -430,8 +467,10 @@ if (response.error) {
 }
 
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
 ___
-#### _inDir.getStats_ || _inFile.getStats_
+#### _getStats_
 La función getStats permite obtener información sobre los stats de un archivo o directorio en una ruta específica.
 #### Uso de la función getStats
 Para utilizar la función `getStats`, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
@@ -466,69 +505,96 @@ interface StatsInfo {
   modifiedTime: Date; // La fecha de modificación del archivo o directorio
 }
 ```
-### inFile
-___
-#### _inFile.write_
-   Crea, añade o sobreescribe contenido de un archivo
-    - Parametros: (path: string, content: string, option: 'create' | 'append' | 'overwrite')
-```javascript
-import { write } from 'tsmuf/inFile';
-
-const path = './text.txt';
-const { error, mensaje } = write(path, 'content', 'create');
-if (!error) 
-  console.log(mensaje); 
-```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
 ___
 ### inObject
+### Indice 
+- [getCountByValues](#inObjectGetCountByValues)
+- [getMaxValue](#inObjectGetMaxValue)
+- [isEmpty](#inObjectIsEmpty)
+- [mapKeys](#inObjectMapKeys)
+- [mergeDeep](#inObjectMergeDeep)
+- [sortByKey](#inObjectSortByKey)
+- [inNestedProperty](#inObjectInNestedProperty)
 ___
 #### _inObject.getCountByValues_
-  
+  Importacion
 ```javascript
 import { getCountByValues } from 'tsmuf/inObject';
-
-const input = '';
-const output = getCountByValues(input);
-console.log(output); 
 ```
-  
+  Uso
 ```javascript
+const object = {
+  name: 'John',
+  age: 30,
+  address: {
+    city: 'Mexico City',
+    country: 'Mexico'
+  },
+  hobbies: ['reading', 'gaming']
+};
+const count = getCountByValues(object);
+console.log(count({ 'address.city': 'Mexico City' })); // Retorna 1
+console.log(count({ 'age': 30 })); // Retorna 1
+console.log(count({ 'hobbies': 'reading' })); // Retorna 1
+console.log(count({ 'hobbies': 'swiming' })); // Retorna 0
 ```
 Salida:
 ```javascript
+ 1
+ 1
+ 1
+ 0
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+|--|--|--|--|
 ___
 #### _inObject.getMaxValue_
-  
+##### Función getMaxValue
+La función getMaxValue toma un objeto con claves de tipo string y valores de tipo number, y devuelve el valor máximo y su clave correspondiente dentro del objeto.
+Importacion:
 ```javascript
-import { getMaxValue } from 'tsmuf/inObject';
-
-const input = '';
-const output = getMaxValue(input);
-console.log(output); 
+import { getMaxValue } from 'tsmuf/inObject'; 
 ```
-  
+##### Ejemplo de uso
 ```javascript
+const obj = { a: 1, b: 5, c: 3 };
+const max = getMaxValue(obj);
+
+console.log(`El valor máximo es ${max.value} y su clave es "${max.key}"`);
+// Output: El valor máximo es 5 y su clave es "b"
+
 ```
 Salida:
-```javascript
+```log
+El valor máximo es 5 y su clave es "b"
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+|--|--|--|--|
 ___
 #### _inObject.isEmpty_
-  
+La función isEmpty toma un objeto y devuelve true si está vacío, es decir, si no tiene ninguna propiedad. De lo contrario, devuelve false.
+Importacion:
 ```javascript
 import { isEmpty } from 'tsmuf/inObject';
-
-const input = '';
-const output = isEmpty(input);
-console.log(output); 
 ```
-  
+#### Uso
+Para utilizar la función isEmpty, simplemente llámala con el objeto que deseas comprobar como argumento:
 ```javascript
+import isEmpty from './path/to/isEmpty';
+
+const obj = { };
+const empty = isEmpty(obj);
+
+console.log(`¿El objeto está vacío? ${empty}`);
 ```
 Salida:
-```javascript
+```log
+¿El objeto está vacío? true
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+|--|--|--|--|
 ___
 #### _inObject.mapKeys_
   
@@ -545,6 +611,8 @@ console.log(output);
 Salida:
 ```javascript
 ```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+|--|--|--|--|
 ___
 #### _inObject.mergeDeep_
   
@@ -561,22 +629,8 @@ console.log(output);
 Salida:
 ```javascript
 ```
-___
-#### _inObject.sortByKey_
-  
-```javascript
-import { sortByKey } from 'tsmuf/inObject';
-
-const input = '';
-const output = sortByKey(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
-```
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-)
+|--|--|--|--|
 ___
 #### _inObject.inNestedProperty_
   
@@ -594,6 +648,9 @@ Salida:
 ```javascript
 ```
 ### inRegex
+Funciones de inRegex
+La librería inRegex proporciona varias funciones para validar diferentes patrones de texto.
+Aquí te mostramos algunos ejemplos sencillos de cómo utilizar las funciones:
 ___
 #### _inRegex.isSnakeCase_
   
@@ -612,100 +669,77 @@ Salida:
 ```
 ___
 #### _inRegex.isCamelCase_
-  
+La función `isCamelCase` valida si una cadena está escrita en formato CamelCase, es decir, que comienza con una letra minúscula y cada palabra siguiente comienza con una letra mayúscula.
 ```javascript
-import { isCamelCase } from 'tsmuf/inRegex';
+import inRegex from 'tsmuf/inRegex';
 
-const input = '';
-const output = isCamelCase(input);
-console.log(output); 
+console.log(inRegex.isCamelCase('estoEsCamelCase')); // Output: true
+console.log(inRegex.isCamelCase('EstoNoEsCamelCase')); // Output: false
 ```
-  
-```javascript
-```
-Salida:
-```javascript
-```
+En este ejemplo, la función isCamelCase se utiliza para validar dos cadenas diferentes.
+- La primera cadena está escrita en formato CamelCase, por lo que la función devuelve `true`.
+- La segunda cadena no está escrita en CamelCase, por lo que la función devuelve `false`.
 ___
 #### _inRegex.isCapitalized_
-  
+La función isCapitalized valida si una cadena comienza con una letra mayúscula.
 ```javascript
-import { isCapitalized } from 'tsmuf/inRegex';
+import inRegex from 'tsmuf/inRegex';
 
-const input = '';
-const output = isCapitalized(input);
-console.log(output); 
+console.log(inRegex.isCapitalized('Hola')); // Output: true
+console.log(inRegex.isCapitalized('mundo')); // Output: false
 ```
-  
-```javascript
-```
-Salida:
-```javascript
-```
+En este ejemplo, la función isCapitalized se utiliza para validar dos cadenas diferentes.
+- La primera cadena comienza con una letra mayúscula, por lo que la función devuelve `true`.
+- La segunda cadena no comienza con una letra mayúscula, por lo que la función devuelve `false`.
+
 ___
-#### _inRegex.isWord_
-  
+#### _inRegex.isSnakeCase_
+La función `isSnakeCase` valida si una cadena está escrita en formato snake_case, es decir, que todas las palabras están separadas por guiones bajos.
 ```javascript
-import { isWord } from 'tsmuf/inRegex';
+import inRegex from 'tsmuf/inRegex';
 
-const input = '';
-const output = isWord(input);
-console.log(output); 
+console.log(inRegex.isSnakeCase('esto_es_snake_case')); // Output: true
+console.log(inRegex.isSnakeCase('estoNoEsSnakeCase')); // Output: false
 ```
-  
+En este ejemplo, la función `isSnakeCase` se utiliza para validar dos cadenas diferentes. 
+- La primera cadena está escrita en formato snake_case, por lo que la función devuelve `true`.
+- La segunda cadena no está escrita en snake_case, por lo que la función devuelve `false`.
+#### _inRegex.isWord_
+La función isWord valida si una cadena está compuesta solo por letras, números y guiones bajos.
 ```javascript
+import inRegex from 'tsmuf/inRegex';
+
+console.log(inRegex.isWord('hola123')); // Output: true
+console.log(inRegex.isWord('¡Hola!')); // Output: false
 ```
-Salida:
-```javascript
-```
+En este ejemplo, la función isWord se utiliza para validar dos cadenas diferentes.
+- La primera cadena está compuesta solo por letras y números, por lo que la función devuelve `true`.
+- La segunda cadena contiene caracteres que no son letras ni números, por lo que la función devuelve `false`.
 ### inString
+La librería inString proporciona funciones para manipular y transformar cadenas de texto.
+#### Impotacion
+```javascript
+import inRegex from 'tsmuf/inRegex';
+```
 ___
 #### _inString.camelToSnake_
-  
+Convierte una cadena de texto en formato camelCase a formato snake_case.
 ```javascript
-import { camelToSnake } from 'tsmuf/inString';
-
-const input = '';
-const output = camelToSnake(input);
-console.log(output); 
+console.log(inString.camelToSnake('camelToSnake')); // camel_to_snake
 ```
-  
-```javascript
-```
-Salida:
-```javascript
-```
-___
 #### _inString.snakeToCamel_
-  
+Convierte una cadena de texto en formato snake_case a formato camelCase.
 ```javascript
-import { snakeToCamel } from 'tsmuf/inString';
-
-const input = '';
-const output = snakeToCamel(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+console.log(inString.snakeToCamel('this_is_snake_case')); // thisIsSnakeCase
 ```
 ___
-#### _inString.snakeToSnakeUpper_
-  
+#### _inString.snakeToSnakeCapitalized_
+  Argumentos
+ - `string`: El string que se desea convertir. Debe estar en formato snake_case.
+ - `isFirstCapitalized` (opcional): Si se establece en true, la primera letra del resultado se capitalizará. Por defecto es `false`.
+##### Ejemplo
 ```javascript
-import { snakeToSnakeUpper } from 'tsmuf/inString';
-
-const input = '';
-const output = snakeToSnakeUpper(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
+console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized', true)); // "Snake_To_Snake_Capitalized"
 ```
 ___
 #### _inString.toCamelAndSnakeCase_

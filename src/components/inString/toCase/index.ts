@@ -1,7 +1,7 @@
 import camelToSnake from "./camelToSnake";
 import snakeToCamel from "./snakeToCamel";
 import snakeToSnakeUpper from "./snakeToSnakeUpper";
-import toCamelAndSnakeCase from "./toCamelAndSnakeCase";
+import toCamelAndSnakeCase from "../../../../beta/toCamelAndSnakeCase";
 
 export {
   camelToSnake,
