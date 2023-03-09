@@ -125,6 +125,4 @@ const toCamelSnakeVariations = (string: string, out: OutCamelSnakeVariations = '
             }
     }
 }
-
-
-console.log(toCamelSnakeVariations('user_name', 'PLURAL'))
+// console.log(toCamelSnakeVariations('user_name', 'PLURAL'))

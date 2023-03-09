@@ -9,7 +9,6 @@ const getArrayOfMostRepeatedLength = (arr: Array<string | number>) => {
   const dictionaryLengths = toLengthDictionary(arr);
   const mostRepeted = Number(getMaxValue(dictionaryLengths).key)
   const filtered = arr.filter(item => item?.toString().length == mostRepeted)
-  console.log({ dictionaryLengths, mostRepeted, filtered });
   return filtered
 }
 

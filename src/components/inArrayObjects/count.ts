@@ -39,5 +39,4 @@ export { count as default }
   ];
   // Contar el número de objetos con city = 'New York'
   const result = count(data, 'address.city', 'New York');
-  console.log(result); // 2
 }

@@ -10,5 +10,3 @@ const question = (message: string) => new Promise((resolve, reject) => {
   })
 })
 export default question;
-question('Introduce la edad: ')
-  .then(res => console.log(`La edad es ${res}`))

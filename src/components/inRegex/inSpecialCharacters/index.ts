@@ -16,6 +16,3 @@ export {
   replaceSpecialCharsByPattern,
   isCharSpecialByPattern,
 }
-
-// const replaced = inSpecialCharacters.replace('(?<:\\w)')
-// console.log(replaced);

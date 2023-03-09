@@ -49,7 +49,7 @@ const mergeArraysByProperty = <T>(...arrs: MergeArray[]): MergedArrays<T> => {
 };
 
 export { mergeArraysByProperty as default };
-{
+const example = () => {
   interface Customer {
     id: number;
     name: string;
@@ -57,7 +57,7 @@ export { mergeArraysByProperty as default };
       country: string;
     };
   }
-  
+
   interface Order {
     id: number;
     customerId: number;
@@ -89,3 +89,4 @@ export { mergeArraysByProperty as default };
   console.log(combined);
   console.log(combined.Mexico.customers[0]); // { id: 4, name: 'Alice Johnson', address: { country: 'Mexico' } }
 }
+
