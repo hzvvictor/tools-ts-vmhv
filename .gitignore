@@ -1,4 +1,5 @@
 .commands
+in**/
 src/components/exports
 node_modules/
 deprecated/
