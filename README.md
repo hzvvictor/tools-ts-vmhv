@@ -1,7 +1,7 @@
 # tsmuf
-Una libreria que contiene utilidades para trabajar con javascipt.
+Una libreria que contiene utilidades para trabajar con javascript/ts.
 - Se encuentra en fase de desarrollo (BETA). 
-- No soporta Typescript 
+- No soporta en su totalidad a Typescript 
 
 ## Instalación
 1. Instala las dependencias: `npm install tsmuf`
@@ -134,7 +134,7 @@ ___
   | Producto A | Category A | 10 | 10
   | Producto B | Category B | 20 | 50
   | Producto C | Category A | 30 | 10
-
+Javascript
 ```javascript
 import { inArrayObjects } from 'tsmuf';
 const { setPropByFilter } = inArrayObjects;
@@ -147,6 +147,24 @@ const products = [
 const updates = [
   { property: 'price', value: 15, when: (obj) => obj.category === 'Category A' },
   { property: 'price', value: 50, when: (obj) => obj.price === 20 }
+];
+
+const updatedProducts = setPropByFilter(products, updates);
+
+console.log(updatedProducts);
+```
+TypeScript
+```typescript
+import { setPropByFilter } from 'tsmuf/inArrayObjects';
+const products = [
+  { id: 1, name: 'Producto A', category: 'Category A', price: 10 },
+  { id: 2, name: 'Producto B', category: 'Category B', price: 20 },
+  { id: 3, name: 'Producto C', category: 'Category A', price: 30 }
+];
+
+const updates = [
+  { property: 'price', value: 15, when: (obj: { category: string; }) => obj.category === 'Category A' },
+  { property: 'price', value: 50, when: (obj: { price: number; }) => obj.price === 20 }
 ];
 
 const updatedProducts = setPropByFilter(products, updates);
