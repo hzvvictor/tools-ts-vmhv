@@ -383,7 +383,7 @@ ___
 ### _rename_
 #### Uso de la función rename
   La función `rename` permite renombrar un archivo o un directorio en una ruta determinada.
-##### Uso
+#### Uso
 Para utilizar la función rename, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
 ```javascript
 import { rename } from 'tsmuf/inDir';
@@ -413,7 +413,7 @@ ___
 |--|--|--|--|
 #### Uso de la función move
   La función `move` permite mover un archivo o un directorio en una ruta determinada.
-##### Uso
+#### Uso
 Para utilizar la función move, primero se debe importar del módulo tsmuf/inDir o tsmuf/inFile
 ```javascript
 import { move } from 'tsmuf/inDir';
@@ -442,9 +442,9 @@ ___
 ### _del_
 Elimina un archivo o directorio en la ruta especificada.
 
-##### Parámetros
+#### Parámetros
  - path (obligatorio): Una cadena de texto que representa la ruta del archivo o directorio a eliminar.
-##### Valor de retorno
+#### Valor de retorno
 La función devuelve un objeto Response con los siguientes campos:
  - mensaje: Un mensaje que indica si la operación se realizó con éxito.
  - error (opcional): Si se produce un error, este campo contendrá una cadena de texto que describe el error.
@@ -548,13 +548,13 @@ Salida:
 |--|--|--|--|
 ___
 ### _inObject.getMaxValue_
-##### Función getMaxValue
+#### Función getMaxValue
 La función getMaxValue toma un objeto con claves de tipo string y valores de tipo number, y devuelve el valor máximo y su clave correspondiente dentro del objeto.
 Importacion:
 ```javascript
 import { getMaxValue } from 'tsmuf/inObject'; 
 ```
-##### Ejemplo de uso
+#### Ejemplo de uso
 ```javascript
 const obj = { a: 1, b: 5, c: 3 };
 const max = getMaxValue(obj);
@@ -682,6 +682,11 @@ console.log(inRegex.isWord("hello")); //true
 ```
 ## inString
 La librería inString proporciona funciones para manipular y transformar cadenas de texto.
+### Indice
+- [camelToSnake](#inStringCamelToSnake)
+- [snakeToCamel](#inStringSnakeToCamel)
+- [snakeToSnakeCapitalized](#inStringSnakeToSnakeCapitalized)
+- [toCamelAndSnakeCase](#inStringToCamelAndSnakeCase)
 ### Impotacion
 ```javascript
 import inString from 'tsmuf/inString';
@@ -702,26 +707,13 @@ ___
   Argumentos
  - `string`: El string que se desea convertir. Debe estar en formato snake_case.
  - `isFirstCapitalized` (opcional): Si se establece en true, la primera letra del resultado se capitalizará. Por defecto es `false`.
-##### Ejemplo
+#### Ejemplo
 ```javascript
+console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized')); // "snake_To_Snake_Capitalized"
+
 console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized', true)); // "Snake_To_Snake_Capitalized"
 ```
 ___
-### _inString.toCamelAndSnakeCase_
-  
-```javascript
-import { toCamelAndSnakeCase } from 'tsmuf/inString';
-
-const input = '';
-const output = toCamelAndSnakeCase(input);
-console.log(output); 
-```
-  
-```javascript
-```
-Salida:
-```javascript
-```
 
 ## Licencia
  Este proyecto está bajo la licencia [MIT](LICENSE). Consulta el archivo [LICENSE](LICENSE) para obtener más información.
