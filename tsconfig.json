@@ -11,6 +11,7 @@
     "beta",
     "deprecated",
     "src/test",
+    "in**/",
     "*.beta.ts",
   ]
 }
