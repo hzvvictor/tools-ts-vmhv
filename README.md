@@ -13,13 +13,13 @@ Una libreria que contiene utilidades para trabajar con javascript/ts.
   La librería incluye las siguientes funciones y utilidades:
 
 ## Indice
-- [inArray](#inArray)
-- [inArrayObjects](#inArrayObjects)
-- [inDir](#inDir)
-- [inFile](#inFile)
-- [inObject](#inObject)
-- [inRegex](#inRegex)
-- [inString](#inString)
+-[Array](#inArray)
+-[Array Objects](#inArrayObjects)
+-[File System](#file-system)
+-[Object](#inObject)
+-[Regex](#inRegex)
+-[String](#inString)
+-[Cli](#inCli)
 
 
 ## inArray
