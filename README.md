@@ -30,7 +30,7 @@ Una libreria que contiene utilidades para trabajar con javascript/ts.
 - [isEmpty](#inArrayisEmpty)
 - [last](#inArraylast)
 
-#### _inArray.isSubset_
+### _inArray.isSubset_
   Comprueba si un arreglo es un subconjunto de otro arreglo más grande.
 
 ```javascript
@@ -45,7 +45,7 @@ console.log(isSubset(smallArr, bigArr)); // true
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
 |--|--|--|--|
-#### _inArray.getMaxValue_
+### _inArray.getMaxValue_
   Encuentra el valor máximo y su índice en un arreglo de números.
 
 ```javascript
@@ -59,7 +59,7 @@ console.log(`El valor máximo es ${resultado.value} y se encuentra en la posici�
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
 |--|--|--|--|
-#### _inArray.removeDuplicates_
+### _inArray.removeDuplicates_
   Elimina elementos duplicados de un array y devuelve un nuevo array sin repeticiones.
 
 ```javascript
@@ -71,7 +71,7 @@ console.log(removeDuplicates([100,200,100]))// [100, 200]
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
 |--|--|--|--|
-#### _inArray.isEmpty_
+### _inArray.isEmpty_
   Esta función verifica si un array está vacío.
 
 ```javascript
@@ -84,7 +84,7 @@ const result2 = isEmpty([]); // true
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-1)
 |--|--|--|--|
-#### _inArray.last_
+### _inArray.last_
   Esta función obtiene el último elemento de un arreglo.
 
 ```javascript
@@ -105,7 +105,7 @@ ___
 - [mergeArraysByProperty](#inArrayObjectsMergeArraysByProperty)
 - [setPropByPropValue](#inArrayObjectsSetPropByPropValue)
 - [sortByProperty](#inArrayObjectsSortByProperty)
-#### _inArrayObjects.count_
+### _inArrayObjects.count_
   Cuenta el número de objetos en un arreglo que tienen una propiedad anidada igual a un valor dado.
 
 ```javascript
@@ -126,11 +126,11 @@ console.log(result); // 2
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
 |--|--|--|--|
-#### _inArrayObjects.setPropByFilter_
+### _inArrayObjects.setPropByFilter_
   Actualiza las propiedades de un array de objetos en base a una propiedad anidada y valor constante.
-  Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría específica:
+  Supongamos que tenemos un arreglo de objetos que representan productos y queremos actualizar el precio de aquellos que tengan una categoría/precio especifica:
   | Producto | Categoria | Precio | Nuevo precio
-  | ------ | ------ | ------ | ------ |
+  | ------ | ------ | ------ | ------ | 
   | Producto A | Category A | 10 | 10
   | Producto B | Category B | 20 | 50
   | Producto C | Category A | 30 | 10
@@ -182,7 +182,7 @@ console.log(updatedProducts);
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
 |--|--|--|--|
-#### _inArrayObjects.groupByNestedProperty_
+### _inArrayObjects.groupByNestedProperty_
   Agrupa los elementos de un arreglo por el valor de una propiedad anidada dentro de cada elemento.
 ```javascript
 import { mergeArraysByProperty } from 'tsmuf/inArrayObjects';
@@ -191,9 +191,7 @@ const personas = [
   { nombre: "Martha", datos: { persona: { edad: 25, altura: 165 } } },
   { nombre: "Pedro", datos: { persona: { edad: 30, altura: 180 } } },
   { nombre: "Lucía", datos: { persona: { edad: 25, altura: 175 } } }
-]
-;
-
+];
 ```
   Para agruparlos por edad, podrías llamar a la función groupByNestedProperty así:
 ```javascript
@@ -218,7 +216,7 @@ console.log(personasPorEdad);
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
 |--|--|--|--|
-#### _inArrayObjects.mergeArraysByProperty_
+### _inArrayObjects.mergeArraysByProperty_
   Agrupa por una propiedad y fusiona los arrays.
   Devolviendo un objeto con las propiedades agrupadas como claves y los valores de los arrays combinados como valores.
   Por ejemplo queremos agruparlos por 'country' los array de 'customers' con 'orders'.
@@ -260,7 +258,7 @@ Esto produciría la siguiente salida:
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
 |--|--|--|--|
-#### _inArrayObjects.setPropByPropValue_
+### _inArrayObjects.setPropByPropValue_
   Actualiza las propiedades de los objetos de un array, en base a propiedades anidadas y valoresconstantes.
 
 Supongamos que tenemos un arreglo de objetos que representan productos:
@@ -309,7 +307,7 @@ Esto produciría la siguiente salida:
 ___
 | 🏠 |[Indice principal](#indice)|🔼|[Indice ](#indice-2) 
 |--|--|--|--|
-#### _inArrayObjects.sortByProperty_
+### _inArrayObjects.sortByProperty_
   Ordena un array de objetos por una propiedad anidada específica, de manera ascendente o descendente.
 Supongamos que tenemos un array de objetos que representan canciones, y queremos ordenarlas por el año de lanzamiento de manera descendente:
 ```javascript
@@ -725,14 +723,14 @@ console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized', true)); // "Sn
 ___
 ## inCli
 ### Indice
-- [question](#inCliCamelToSnake)
+- [question](#inCliQuestion)
 ### Impotacion
 ```javascript
 import inCli from 'tsmuf/inCli';
 ```
 ___
 ### _inCli.question_
-Hace una pregunta en la consola usando las utilidades integradas de nodejs.
+Hace una pregunta en la terminal usando las utilidades integradas de nodejs.
 
 Ejemplo queremos saber la edad:
 ```javascript

@@ -1,5 +1,5 @@
 import read from "./read";
-import { del, getStats, move, rename } from "../inFile";
+import { del, getStats, move, rename, exist } from "../inFile";
 
 const functions = {
   read,
@@ -7,6 +7,7 @@ const functions = {
   move,
   del,
   getStats,
+  exist,
 }
 export {
   functions as default,
@@ -15,4 +16,5 @@ export {
   move,
   del,
   getStats,
+  exist,
 }
