@@ -752,6 +752,26 @@ console.log(inString.toSnakeCase('to snake case')); // to_snake_case
 console.log(inString.toSnakeCase('toSnakeCase')); // to_snake_case
 ```
 ___
+### _inString.toSpaceCase_
+  Argumentos
+ - `string`: El string que se desea convertir. 
+#### Ejemplo
+```javascript
+console.log(inString.toSpaceCase('toSpaceCase'));//to Space Case
+
+console.log(inString.toSpaceCase('to_Space_Case'));//to Space Case
+```
+___
+### _inString.toTitleCase_
+  Argumentos
+ - `string`: El string que se desea convertir. 
+#### Ejemplo
+```javascript
+console.log(inString.toTitleCase('to title case'));//To Title Case
+console.log(inString.toTitleCase('to_title_case'));//To_Title_Case
+console.log(inString.toTitleCase('TO-tITLE-CAse'));//To-Title-Case
+```
+___
 ## inCli
 ### Indice
 - [question](#inCliQuestion)
