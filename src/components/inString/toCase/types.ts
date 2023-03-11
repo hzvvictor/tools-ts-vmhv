@@ -1,7 +1,7 @@
 export type CamelCase = 'camel';
 export type SnakeCase = 'snake';
 export type CamelOrSnake = CamelCase | SnakeCase;
-export interface CamelSnakeVariations {
+export interface StringsVariations {
   camel: string;       // stringVariation
   camelCap: string;    // StringVariation
   snake: string;       // string_variation
@@ -11,4 +11,4 @@ export interface CamelSnakeVariations {
   spaceCap: string;    // String variation
   spaceTitle: string;  // String Variation
 }
-export type OutCamelSnakeVariations = 'ALL' | 'PLURAL' | 'SINGULAR'
+export type OutStringsVariations = 'ALL' | 'PLURAL' | 'SINGULAR'

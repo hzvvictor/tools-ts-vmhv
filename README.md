@@ -716,9 +716,40 @@ ___
  - `isFirstCapitalized` (opcional): Si se establece en true, la primera letra del resultado se capitalizará. Por defecto es `false`.
 #### Ejemplo
 ```javascript
+const { snakeToSnakeCapitalized } = inString;
 console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized')); // "snake_To_Snake_Capitalized"
 
 console.log(snakeToSnakeCapitalized('snake_to_snake_capitalized', true)); // "Snake_To_Snake_Capitalized"
+```
+___
+### _inString.capitalize_
+  Argumentos
+ - `string`: El string que se desea convertir. 
+#### Ejemplo
+```javascript
+console.log(inString.capitalize('capitalize')); // "Capitalize"
+
+console.log(inString.capitalize('word')); // "Word"
+```
+___
+### _inString.toCamelCase_
+  Argumentos
+ - `string`: El string que se desea convertir. 
+#### Ejemplo
+```javascript
+console.log(toCamelCase('to camel case')); // "toCamelCase"
+
+console.log(toCamelCase('to_camel_case')); // "toCamelCase"
+```
+___
+### _inString.toSnakeCase_
+  Argumentos
+ - `string`: El string que se desea convertir. 
+#### Ejemplo
+```javascript
+console.log(inString.toSnakeCase('to snake case')); // to_snake_case
+
+console.log(inString.toSnakeCase('toSnakeCase')); // to_snake_case
 ```
 ___
 ## inCli
