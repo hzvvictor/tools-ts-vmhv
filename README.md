@@ -398,6 +398,35 @@ En caso de existir algún error durante la lectura del directorio, se devuelve u
 | 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
 |--|--|--|--|
 ___
+### _inDir.add_
+Crea un directorio en la ruta especificada.
+#### Parámetros
+- `path` (string): La ruta donde se creará el directorio.
+#### Retorno
+Un objeto de tipo `Response` con la siguiente estructura:
+
+- `mensaje` (string): Mensaje indicando si el directorio se creó con éxito o si ocurrió algún error.
+- `error` (Error, opcional): Objeto `Error` con información del error en caso de que haya ocurrido uno.
+
+```javascript
+import { read } from 'tsmuf/inDir';
+import inDir from 'tsmuf'; // inDir.add
+```
+Luego, se puede llamar a la función read de la siguiente forma:
+```javascript
+// Crear un directorio en la carpeta actual
+const resultado = add('./nuevo-directorio');
+
+// Si no existe el directorio deberia retornar 
+console.log(resultado.mensaje); // "El directorio se ha creado con éxito en './nuevo-directorio'."
+
+// O en su defecto si ya existe
+console.log(resultado.error); // 'Ya existe un archivo o directorio con ese nombre.'
+```
+
+| 🏠 |[Indice principal](#indice)|🔼|[Indice](#indice-3)
+|--|--|--|--|
+___
 ### _rename_
 #### Uso de la función rename
   La función `rename` permite renombrar un archivo o un directorio en una ruta determinada.
