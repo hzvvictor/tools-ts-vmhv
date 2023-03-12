@@ -355,6 +355,7 @@ ___
 - [Indice Principal 🏠](#indice)
 - [File write](#inFileWrite)
 - [Dir read](#inDirRead)
+- [Dir add](#inDirAdd)
 - [Rename](#rename)
 - [Move](#move)
 - [Del](#del)
