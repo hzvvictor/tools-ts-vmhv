@@ -410,7 +410,7 @@ Un objeto de tipo `Response` con la siguiente estructura:
 - `error` (Error, opcional): Objeto `Error` con información del error en caso de que haya ocurrido uno.
 
 ```javascript
-import { read } from 'tsmuf/inDir';
+import { add } from 'tsmuf/inDir';
 import inDir from 'tsmuf'; // inDir.add
 ```
 Luego, se puede llamar a la función read de la siguiente forma:
