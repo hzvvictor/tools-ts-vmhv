@@ -1,12 +1,14 @@
-.commands
-in**/
-src/components/exports
 node_modules/
 deprecated/
 src/test
 beta/
 dist/
+src/components/exports
+.commands
+
 src/**/*.js
 src/**/*.beta.ts
+
 index.js
 index.d.ts
+/in**
