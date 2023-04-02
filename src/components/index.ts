@@ -7,7 +7,16 @@ import InRegex from './inRegex'
 import InStrIng from './inString'
 import InCli from './inCli'
 
-export {
+const functions = {
+  inArray: InArray,
+  inArrayObjects: InArrayObjects,
+  inDir: InDir,
+  inFile: InFile,
+  inObject: InObject,
+  inRegex: InRegex,
+  inStrIng: InStrIng,
+  inCli: InCli,
+
   InArray,
   InArrayObjects,
   InDir,
@@ -17,7 +26,18 @@ export {
   InStrIng,
   InCli,
 }
-export default {
+export {
+  functions as default,
+  
+  InArray as inArray,
+  InArrayObjects as inArrayObjects,
+  InDir as inDir,
+  InFile as inFile,
+  InObject as inObject,
+  InRegex as inRegex,
+  InStrIng as inStrIng,
+  InCli as inCli,
+
   InArray,
   InArrayObjects,
   InDir,
