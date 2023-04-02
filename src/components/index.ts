@@ -1,11 +1,11 @@
-import InArray from './arr'
-import InArrayObjects from './arrObjs'
-import InDir from './dir'
-import InFile from './file'
-import InObject from './obj'
-import InRegex from './regex'
-import InStrIng from './string'
-import InCli from './InCli'
+import InArray from './inArray'
+import InArrayObjects from './inArrayObjects'
+import InDir from './inDir'
+import InFile from './inFile'
+import InObject from './inObject'
+import InRegex from './inRegex'
+import InStrIng from './inString'
+import InCli from './inCli'
 
 export {
   InArray,
