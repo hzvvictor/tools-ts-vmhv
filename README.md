@@ -420,7 +420,21 @@ ___
 Crea un directorio en la ruta especificada.
 #### Parámetros
 - `path` (string): La ruta donde se creará el directorio.
+<<<<<<< HEAD
 Se puede llamar a la función read de la siguiente forma:
+=======
+#### Retorno
+Un objeto de tipo `Response` con la siguiente estructura:
+
+- `mensaje` (string): Mensaje indicando si el directorio se creó con éxito o si ocurrió algún error.
+- `error` (Error, opcional): Objeto `Error` con información del error en caso de que haya ocurrido uno.
+
+```javascript
+import { read } from 'tsmuf/inDir';
+import inDir from 'tsmuf'; // inDir.add
+```
+Luego, se puede llamar a la función read de la siguiente forma:
+>>>>>>> parent of 6421db5 (added md dirs readme)
 ```javascript
 // Crear un directorio en la carpeta actual
 const resultado = inDir.add('./nuevo-directorio');
