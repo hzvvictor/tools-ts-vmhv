@@ -1,26 +1,29 @@
-import inArray from './inArray'
-import inArrayObjects from './inArrayObjects'
-import inDir from './inDir'
-import inFile from './inFile'
-import inObject from './inObject'
-import inRegex from './inRegex'
-import inString from './inString'
+import InArray from './arr'
+import InArrayObjects from './arrObjs'
+import InDir from './dir'
+import InFile from './file'
+import InObject from './obj'
+import InRegex from './regex'
+import InStrIng from './string'
+import InCli from './InCli'
 
 export {
-  inArray,
-  inArrayObjects,
-  inDir,
-  inFile,
-  inObject,
-  inRegex,
-  inString,
+  InArray,
+  InArrayObjects,
+  InDir,
+  InFile,
+  InObject,
+  InRegex,
+  InStrIng,
+  InCli,
 }
 export default {
-  inArray,
-  inArrayObjects,
-  inDir,
-  inFile,
-  inObject,
-  inRegex,
-  inString,
+  InArray,
+  InArrayObjects,
+  InDir,
+  InFile,
+  InObject,
+  InRegex,
+  InStrIng,
+  InCli,
 }

@@ -8,5 +8,4 @@ function keysToObject<T extends string, V>(keys: T[], value: V): Record<T, V> {
   return Object.fromEntries(keys.map((key) => [key, value])) as Record<T, V>;
 }
 
-
 export default keysToObject
