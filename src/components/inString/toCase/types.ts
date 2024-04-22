@@ -11,4 +11,4 @@ export interface StringsVariations {
   spaceCap: string;    // String variation
   spaceTitle: string;  // String Variation
 }
-export type OutStringsVariations = 'ALL' | 'PLURAL' | 'SINGULAR'
+export type OutStringsVariations = 'ALL' | 'PLURAL' | 'SINGULAR'| 'NORMAL';

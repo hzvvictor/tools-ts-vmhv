@@ -1,4 +1,4 @@
-const toPlural = (string: string, toLowerCase: boolean): string => {
+const toPlural = (string: string, toLowerCase: boolean = false): string => {
   let formated = string.trim();
   const reg = new RegExp(`(s|S)$`, 'gi')
   const isPlural = reg.test(string);

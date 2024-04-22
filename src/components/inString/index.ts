@@ -1,8 +1,9 @@
+import { get } from "http";
 import {
   camelToSnake,
   snakeToCamel,
   capitalize,
-  getStringCases,
+  getAllStringCases,
   toCamelCase,
   toPlural,
   toSingular,
@@ -13,12 +14,14 @@ import {
   toTitleCaseFromSnake,
   snakeToSnakeCapitalized,
   toSpaceTitleCaseFromSnake,
+  getStringCases,
 } from "./toCase";
 
 const functions = {
   camelToSnake,
   snakeToCamel,
   capitalize,
+  getAllStringCases,
   getStringCases,
   toCamelCase,
   toPlural,
@@ -36,6 +39,7 @@ export {
   camelToSnake,
   snakeToCamel,
   capitalize,
+  getAllStringCases,
   getStringCases,
   toCamelCase,
   toPlural,

@@ -1,6 +1,6 @@
 import camelToSnake from "./camelToSnake";
 import capitalize from "./capitalize";
-import getStringCases from "./getStringCases";
+import getAllStringCases, { getStringCases } from "./getStringCases";
 import snakeToCamel from "./snakeToCamel";
 import toCamelCase from "./toCamelCase";
 import toPlural from "./toPlural";
@@ -16,6 +16,7 @@ export {
   camelToSnake,
   snakeToCamel,
   capitalize,
+  getAllStringCases,
   getStringCases,
   toCamelCase,
   toPlural,
@@ -32,6 +33,7 @@ export default {
   camelToSnake,
   snakeToCamel,
   capitalize,
+  getAllStringCases,
   getStringCases,
   toCamelCase,
   toPlural,
