@@ -4,7 +4,7 @@ import InDir from './inDir'
 import InFile from './inFile'
 import InObject from './inObject'
 import InRegex from './inRegex'
-import InStrIng from './inString'
+import InString from './inString'
 import InCli from './inCli'
 
 const functions = {
@@ -14,7 +14,7 @@ const functions = {
   inFile: InFile,
   inObject: InObject,
   inRegex: InRegex,
-  inStrIng: InStrIng,
+  inString: InString,
   inCli: InCli,
 
   InArray,
@@ -23,7 +23,7 @@ const functions = {
   InFile,
   InObject,
   InRegex,
-  InStrIng,
+  InStrIng: InString,
   InCli,
 }
 export {
@@ -35,7 +35,7 @@ export {
   InFile as inFile,
   InObject as inObject,
   InRegex as inRegex,
-  InStrIng as inStrIng,
+  InString as inString,
   InCli as inCli,
 
   InArray,
@@ -44,6 +44,6 @@ export {
   InFile,
   InObject,
   InRegex,
-  InStrIng,
+  InString as InStrIng,
   InCli,
 }

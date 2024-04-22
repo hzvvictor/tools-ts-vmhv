@@ -10,5 +10,5 @@ src/**/*.js
 src/**/*.d.ts
 src/**/*.beta.ts
 
-/in**
+# /in**
 /*.tgz
