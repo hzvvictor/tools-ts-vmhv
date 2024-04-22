@@ -9,8 +9,8 @@ const capitalize = (string: string): string => {
     const newWord = first.toUpperCase() + rest;
     out.push(newWord);
   });
-  return out.join(' ');
+  return out.join('');
 };
-// const arr = ['u ', 'test ARR', 'test arr', 'test-arr', 'test_arr'];
+// const arr = ['u ', 'test ARR', 'test arr', 'test-arr', 'test_arr', 'cat flag'];
 // arr.forEach((str) => { console.log({ str: capitalize(str) }) });
 export default capitalize;
