@@ -3,7 +3,8 @@
     "esModuleInterop": true,
     "module": "CommonJS",
     "outDir": ".",
-    "rootDir": "src/components"
+    "rootDir": "src/components",
+    "moduleResolution": "node",
   },
   "exclude": [
     "node_modules",

@@ -12,7 +12,7 @@ type WriteOption = 'create' | 'append' | 'overwrite'
  * @param option La opción de escritura (create, append o overwrite).
  * @returns Un objeto con el mensaje y el error opcional.
  */
-const write = (path: string, content: string, option: WriteOption): Response => {
+const write = (path: string, content: string, option= 'overwrite' as WriteOption): Response => {
   const exist = check(path)
   if (!exist && option !== 'create') {
     return notFound(path);
