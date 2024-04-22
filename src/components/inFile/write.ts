@@ -13,13 +13,10 @@ type WriteOption = 'create' | 'append' | 'overwrite'
  * @returns Un objeto con el mensaje y el error opcional.
  */
 const write = (path: string, content: string, option= 'overwrite' as WriteOption): Response => {
-  const exist = check(path)
-  if (!exist && option !== 'create') {
-    return notFound(path);
-  }
 
   switch (option) {
     case 'create':
+      const exist = check(path);
       if (exist){
         return response({
           mensaje: 'Error',
