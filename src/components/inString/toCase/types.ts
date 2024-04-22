@@ -6,9 +6,9 @@ export interface StringsVariations {
   camelCap: string;    // StringVariation
   snake: string;       // string_variation
   snakeCap: string;    // String_variation
-  snakeTitle: string;  // String_Variation
+  //snakeTitle: string;  // String_Variation
   space: string;       // string variation
   spaceCap: string;    // String variation
-  spaceTitle: string;  // String Variation
+  //spaceTitle: string;  // String Variation
 }
 export type OutStringsVariations = 'ALL' | 'PLURAL' | 'SINGULAR'| 'NORMAL';
