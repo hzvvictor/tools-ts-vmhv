@@ -7,8 +7,8 @@ src/components/exports
 .commands
 
 src/**/*.js
+src/**/*.d.ts
 src/**/*.beta.ts
 
-index.js
-index.d.ts
 /in**
+/*.tgz

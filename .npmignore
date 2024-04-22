@@ -1,11 +1,14 @@
-.commands
-src/components/exports
 node_modules/
 deprecated/
 src/test
 beta/
 dist/
-src/
+src/components/exports
+.commands
+
 src/**/*.js
+src/**/*.d.ts
 src/**/*.beta.ts
+
 /in**
+/*.tgz
