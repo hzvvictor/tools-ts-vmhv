@@ -4,7 +4,8 @@ import { Response } from "../inDirAndFile/response/response";
 import { mkdirSync } from 'fs';
 import { execSync } from 'child_process';
 // execSync
-const copy = (origin: string, destination: string, { overwrite = false } = {}): Response => {
+let optDefault = { overwrite: true };
+const copy = (origin: string, destination: string, { overwrite = optDefault.overwrite } = {}): Response => {
   const existOrigin = fse.existsSync(origin);
   if (!existOrigin) return response({
     mensaje: 'Error',
@@ -21,5 +22,6 @@ const copy = (origin: string, destination: string, { overwrite = false } = {}): 
     mensaje: `El directorio ${origin} ha sido copiado con éxito en ${destination}.`
   });
 }
+copy.setOverwrite = (overwrite: boolean) => { optDefault.overwrite = overwrite; }
 // console.log(copy('./inDir', './inDir2', { overwrite: true }));
 export default copy;

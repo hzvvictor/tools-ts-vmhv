@@ -10,8 +10,9 @@ const capitalize = (string: string) => {
   return newString;
 
 };
-const arr = ['u ', 'test ArrFasd_ASD', 'test arr', 'test-arr', 'test_arr', 'cat flag', 'cat_flag', 'catFlag']
-arr.forEach((str) => { console.log({ str: capitalize(str) }) });
+/* const arr = ['u ', 'test ArrFasd_ASD', 'test arr', 'test-arr', 'test_arr', 'cat flag', 'cat_flag', 'catFlag']
+arr.forEach((str) => { console.log({ str: capitalize(str) }) }); */
+//console.log(capitalize('CatPermission'));
 export default capitalize;
 
 function get(string: string) {

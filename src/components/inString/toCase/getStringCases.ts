@@ -12,8 +12,9 @@ export const getStringCases = (string: string): StringsVariations => {
     const { camel, snake } = toCamelAndSnakeCase(string)
     const spaceNormal = toSpaceCase(snake);
     const variationsNor = {
+        original: string,
         camel: camel,
-        camelCap: capitalize(camel),
+        camelCap: capitalize(string),
         snake: snake,
         snakeCap: capitalize(snake),
         space: spaceNormal,
@@ -60,6 +61,7 @@ const getAllStringCases = (string: string, out: OutStringsVariations = 'ALL'): S
             }
     }
 }
- console.log(getAllStringCases('uSER NAMES', 'ALL'))
+ //console.log(getAllStringCases('uSER NAMES', 'ALL'))
 //console.log(getAllStringCases('cat flag', 'ALL'))
+//console.log(getAllStringCases('CatPermission', 'ALL'))
 export default getAllStringCases;
